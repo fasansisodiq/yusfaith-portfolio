@@ -1,0 +1,22 @@
+@import "tailwindcss";
+.slider-container {
+  div {
+     animation : slide 9s linear 0s infinite forwards ;
+  }
+
+} 
+ @keyframes slide  {
+     
+    from {
+      transform: translateX(0%)
+    }
+    to{
+      transform: translateX(-200%)
+    }
+  }
+  
+
+
+
+
+
