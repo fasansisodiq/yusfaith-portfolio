@@ -1,6 +1,6 @@
 
 import { CiSearch } from "react-icons/ci"
-import Navigator from "./Navigator"
+import ScrollBtns from "./ScrollBtns"
 
 
 function Footer() {
@@ -11,7 +11,7 @@ function Footer() {
         <span className="lg:text-[2.8rem] text-slate-300/40"><CiSearch/></span>
       <input type="text" placeholder="Search in the portfolio" name="search" className="outline-0 border-0 placeholder-stone-300/80 placeholder:text-xl lg:placeholder:text-2xl w-60"/>
       </div>
-      <Navigator />
+      <ScrollBtns />
     </div>
   )
 }

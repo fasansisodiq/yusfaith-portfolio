@@ -1,4 +1,11 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+@tailwind utilities;
+
+@theme {
+  --rubik-dirty: "Rubik Dirt", system-ui;
+}
 .slider-container {
   div {
      animation : slide 9s linear 0s infinite forwards ;
@@ -14,8 +21,18 @@
       transform: translateX(-200%)
     }
   }
-  
-
+.shake-element {
+  transform: skew(20deg);
+     animation : shake 2s linear infinite alternate ;
+}   
+@keyframes shake {
+  0% {
+    transform: skewY(20deg);
+  }
+  100% {
+    transform: skewY(-20deg);
+  }
+}
 
 
 

@@ -21,4 +21,3 @@ function ProfileTxt() {
 }
 
 export default ProfileTxt
-{/* <span className="w-5 h-5 bg-green-800 border-2 border-green-800 rounded-4xl"></span> */}

@@ -1,5 +1,5 @@
 
-function Header() {
+function Navbar() {
   return (
     <div id="slide" className="fixed top-0 h-fit  flex justify-center items-center gap-55  text-white pt-4 ">
       <span className="uppercase lg:text-5xl font-extrabold">yusfaith</span>
@@ -10,4 +10,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Navbar
