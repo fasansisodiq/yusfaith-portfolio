@@ -1,11 +1,9 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
-
-@tailwind utilities;
-
 @theme {
-  --rubik-dirty: "Rubik Dirt", system-ui;
+  --font-rubik-dirty: "Rubik Dirt", system-ui;
 }
+@theme {--font-montserrat: "Montserrat", sans-serif;}
+
 .slider-container {
   div {
      animation : slide 9s linear 0s infinite forwards ;
