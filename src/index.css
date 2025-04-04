@@ -2,27 +2,27 @@
 @theme {
   --font-rubik-dirty: "Rubik Dirt", system-ui;
 }
-@theme {--font-montserrat: "Montserrat", sans-serif;}
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+}
 
 .slider-container {
   div {
-     animation : slide 9s linear 0s infinite forwards ;
+    animation: slide 9s linear 0s infinite forwards;
   }
-
-} 
- @keyframes slide  {
-     
-    from {
-      transform: translateX(0%)
-    }
-    to{
-      transform: translateX(-200%)
-    }
+}
+@keyframes slide {
+  from {
+    transform: translateX(100%);
   }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .shake-element {
   transform: skew(20deg);
-     animation : shake 2s linear infinite alternate ;
-}   
+  animation: shake 2s linear infinite alternate;
+}
 @keyframes shake {
   0% {
     transform: skewY(20deg);
@@ -31,7 +31,3 @@
     transform: skewY(-20deg);
   }
 }
-
-
-
-

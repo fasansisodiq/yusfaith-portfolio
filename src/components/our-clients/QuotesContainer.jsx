@@ -1,5 +1,7 @@
 import React from "react";
 import QuoteCard from "./QuoteCard";
+import { usePortState } from "../../hooks/PortfolioContext";
+
 const quotes = [
   {
     name: "dev qazeem",
@@ -16,23 +18,29 @@ const quotes = [
   },
   {
     name: "dev sodiq",
-    position: "full-stack enginer",
+    position: "full-stack engineer",
     src: null,
     quote:
       "Their designs are not just appealing, but also incredibly user-friendly.",
   },
 ];
+
 function QuotesContainer() {
+  const { showPageNav } = usePortState();
   return (
     <div
-      className={` flex flex-col justify-center items-center  h-screen
+      className={` flex flex-col justify-center items-center   ${
+        showPageNav
+          ? "h-fit sm:h-screen"
+          : "h-fit pt-0 sm:pt-10 md:pt-15 lg:pt-20"
+      }
     `}
     >
-      <h1 className="self-start  lg:pb-6 capitalize font-bold lg:text-5xl text-white">
+      <h1 className="self-start pb-0 pt-10  lg:pb-6 capitalize font-bold text-2xl sm:text-3xl lg:text-5xl xl:text-5xl text-white">
         hear from our clients
       </h1>
 
-      <div className="flex  justify-center items-center gap-3 lg:pb-10">
+      <div className="flex  justify-center items-center gap-3 pb-20 sm:pb-10">
         {quotes.map((quote, idx) => (
           <QuoteCard
             src={quote.src}

@@ -3,28 +3,20 @@ import { MdOutlineCall } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
 import { BiBook } from "react-icons/bi";
 
-function ScrollBtns({ searchQuery }) {
+function ScrollBtns() {
+  // const btnClass = "w-20 sm:w-30 lg:w-40 xl:w-40";
   return (
-    <div className=" fixed flex lg:right-120 justify-center items-center gap-2 lg:gap-8">
+    <div
+      className={` fixed flex right-12 sm:right-12 lg:right-108 justify-center items-center gap-2 lg:gap-8`}
+    >
       <Button
         to={"projects"}
-        icon={<BiBook size={"1.4rem"} />}
+        icon={<BiBook />}
         key={"Projects"}
         label={"projects"}
-        btnClassName={"lg:w-40"}
       />
-      <Button
-        to="aboutMe"
-        icon={<IoPerson size={"1.4rem"} />}
-        label={"about me"}
-        btnClassName={"lg:w-40"}
-      />
-      <Button
-        to="ContactMe"
-        icon={<MdOutlineCall size={"1.4rem"} />}
-        label={"contact me"}
-        btnClassName={"lg:w-40"}
-      />
+      <Button to="aboutMe" icon={<IoPerson />} label={"about me"} />
+      <Button to="ContactMe" icon={<MdOutlineCall />} label={"contact me"} />
     </div>
   );
 }
