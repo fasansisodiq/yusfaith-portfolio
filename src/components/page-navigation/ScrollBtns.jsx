@@ -4,7 +4,6 @@ import { IoPerson } from "react-icons/io5";
 import { BiBook } from "react-icons/bi";
 
 function ScrollBtns() {
-  // const btnClass = "w-20 sm:w-30 lg:w-40 xl:w-40";
   return (
     <div
       className={` fixed flex right-12 sm:right-12 lg:right-108 justify-center items-center gap-2 lg:gap-8`}

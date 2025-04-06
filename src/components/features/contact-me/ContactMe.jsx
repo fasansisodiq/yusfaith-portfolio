@@ -8,7 +8,7 @@ function ContactMe() {
   return (
     <div
       className={`w-full  ${
-        showPageNav ? "h-screen " : "h-fit sm:pt-10 lg:pt-20"
+        showPageNav ? "h-screen" : "h-fit sm:pt-10 lg:pt-20"
       } text-white flex flex-col justify-center sm:pt-30 lg:pt-20  `}
     >
       <h1 className="capitalize text-2xl sm:text-3xl lg:text-5xl xl:text-5xl font-semibold lg:pt-10 pb-5 ">

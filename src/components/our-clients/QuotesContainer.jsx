@@ -6,22 +6,23 @@ const quotes = [
   {
     name: "dev qazeem",
     position: "data analyst",
-    src: "./sodiq3.png",
+    src: "customer.jpeg",
     quote:
       "Their designs are not just appealing, but also incredibly user-friendly.",
   },
   {
-    name: "dev smith",
+    name: "dev quams",
     position: "web developer",
+    src: "customer.jpeg",
     quote:
-      "Their designs are not just appealing, but also incredibly user-friendly.",
+      "Their designs solutions have significantly improved our websites's user experience, leading to a 20% increase in conversation",
   },
   {
     name: "dev sodiq",
     position: "full-stack engineer",
-    src: null,
+    src: "customer.jpeg",
     quote:
-      "Their designs are not just appealing, but also incredibly user-friendly.",
+      "They were able to quickly understand our target audience and create a design that resonated with them on an emotional level.",
   },
 ];
 
@@ -30,9 +31,7 @@ function QuotesContainer() {
   return (
     <div
       className={` flex flex-col justify-center items-center   ${
-        showPageNav
-          ? "h-fit sm:h-screen"
-          : "h-fit pt-0 sm:pt-10 md:pt-15 lg:pt-20"
+        showPageNav ? "h-screen" : "h-fit sm:pt-10 lg:pt-20"
       }
     `}
     >

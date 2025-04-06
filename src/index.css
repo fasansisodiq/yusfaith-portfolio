@@ -31,3 +31,37 @@
     transform: skewY(-20deg);
   }
 }
+.slide-right {
+  animation: slide-right 3s ease-in-out forwards;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+.slide-left {
+  animation: slide-left 2s ease-in-out forwards;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.rotate-clockwise {
+  animation: rotate 2s linear forwards;
+}
+@keyframes identifier {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

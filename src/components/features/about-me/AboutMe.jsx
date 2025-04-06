@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <div
       className={` ${
-        showPageNav ? "h-screen" : "h-fit "
+        showPageNav ? "h-screen" : "h-fit sm:pt-10 lg:pt-20"
       } flex flex-col justify-center items-center gap-5 text-white sm:text-2xl md:text-3xl lg:text-4xl `}
     >
       <h1 className="self-start  font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">

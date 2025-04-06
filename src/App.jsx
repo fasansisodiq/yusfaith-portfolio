@@ -14,7 +14,7 @@ function App() {
   return (
     <div
       id="app"
-      className=" element w-screen h-full  bg-slate-950 bg-scroll font-montserrat "
+      className=" element w-screen h-full  bg-black bg-scroll font-montserrat "
     >
       <div className="w-full h-full flex flex-col px-5 md:px-10 lg:px-20 xl:px-30">
         <Navbar />
