@@ -1,6 +1,18 @@
 @import "tailwindcss";
+
+:root {
+  --bbackground: #ffffff;
+  --bforeground: #858a84;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --font-rubik-dirty: "Rubik Dirt", system-ui;
+  --btn-primary: var(--bbackground);
+  --btn-secondary: var(--bforeground);
 }
 @theme {
   --font-montserrat: "Montserrat", sans-serif;

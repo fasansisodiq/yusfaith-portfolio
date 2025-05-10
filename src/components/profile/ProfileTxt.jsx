@@ -23,7 +23,7 @@ function ProfileTxt() {
         btnClassName={"animate-rotate-clockwise rotate"}
         label={"Available for work"}
         icon={
-          <span className="relative flex  size-2 sm:size-2.5 md:size-3 lg:size-3.5 xl:size-3.5">
+          <span className="relative flex size-2 sm:size-2.5 md:size-3 lg:size-3.5 xl:size-3.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-600 opacity-75"></span>
             <span className="relative inline-flex size-2 sm:size-2.5 md:size-3 lg:size-3.5 xl:size-3.5 rounded-full bg-emerald-800"></span>
           </span>
