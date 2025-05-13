@@ -1,4 +1,4 @@
-import React from "react";
+import { FiMenu } from "react-icons/fi";
 import Button from "../../components/ui/Button";
 import { Link } from "react-router-dom";
 
@@ -14,12 +14,16 @@ const Header = () => {
               </h1>
             </Link>
           </div>
-          <Button
-            label="contact me"
-            onClick={() => {
-              window.location.href = "#ContactMe";
-            }}
-          />
+          <div>
+            <FiMenu size={30} className="md:hidden text-white" />
+            <Button
+              label="contact me"
+              onClick={() => {
+                window.location.href = "#contactMe";
+              }}
+              className="hidden md:block"
+            />
+          </div>
         </div>
       </header>
     </div>

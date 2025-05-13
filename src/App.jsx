@@ -1,9 +1,6 @@
-import RootLayout from "./Layout/RootLayout";
+//pages
+import RootLayout from "./layout/RootLayout";
 import LandingPage from "./Pages/landing";
-import AboutMe from "./Pages/landing/about-me/AboutMe";
-
-import ContactMe from "./components/features/contact-me/ContactMe";
-import Profile from "./components/profile/Profile";
 
 // React Router Setup
 import {
@@ -12,15 +9,14 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
+import Ebute from "./pages/ebute";
 // import { usePortState } from "./hooks/PortfolioContext";
 
 const privateRoutes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<LandingPage />} />
-      <Route path="/about" element={<AboutMe />} />
-      <Route path="/contact" element={<ContactMe />} />
-      <Route path="/profile" element={<Profile />} />
+      <Route path="/ebute" element={<Ebute />} />
     </Route>
   )
 );

@@ -5,6 +5,7 @@ import Hero from "./hero/Hero";
 import SearchBox from "../../components/seachbar/SearchBox";
 import AboutMe from "./about-me/AboutMe";
 import TestimonialCard from "./our-clients/TestimonialCard";
+import FloatingNav from "../../components/ui/FloatingNav";
 
 const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <AboutMe />
       <TestimonialCard />
       <ContactMe />
+      <FloatingNav />
       {/* <Profile /> */}
       {/* {showPageNav && <PageNavigation />} */}
 
