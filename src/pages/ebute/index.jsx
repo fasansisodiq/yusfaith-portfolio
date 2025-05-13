@@ -7,6 +7,7 @@ import IntroSection from "./intro-section/IntroSection";
 import Challenges from "./challenge/Challenges";
 import UseCard from "../../components/use-card/UseCard";
 import TypographyCard from "../../components/typo-card/TypographyCard";
+import LearnCard from "../../components/learn-card/LearnCard";
 
 const montserratData = {
   fontName: "MONTSERRAT",
@@ -59,6 +60,10 @@ const Ebute = () => {
         image={flowchart}
       />
       <TypographyCard {...montserratData} />
+      <LearnCard
+        title="Achievements and learnings"
+        description={`<p>This project marked the very first task I undertook upon joining Ebute truck management App. Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of the work, despite its imperfections.</p> <p>One of the most valuable lessons I gained from this experience was the importance of time management.</p><p>That experience taught me a lot about planning, prioritizing, and managing expectations, Skills that have been crucial in every project since.</p>`}
+      />
     </div>
   );
 };

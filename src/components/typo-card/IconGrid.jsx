@@ -18,21 +18,21 @@ export default function IconGrid() {
   const getIcon = (iconName) => {
     switch (iconName) {
       case "Transfers":
-        return <LuHouse className="h-6 w-6" />;
+        return <LuHouse className="size-6 lg:size-8" />;
       case "Requests":
-        return <LuAlignJustify className="h-6 w-6" />;
+        return <LuAlignJustify className="size-6 lg:size-8" />;
       case "In Exit":
-        return <LuCircleArrowLeft className="h-6 w-6" />;
+        return <LuCircleArrowLeft className="size-6 lg:size-8" />;
       case "Entry Permit":
-        return <LuTruck className="h-6 w-6" />;
+        return <LuTruck className="size-6 lg:size-8" />;
       case "Users":
-        return <LuUser className="h-6 w-6" />;
+        return <LuUser className="size-6 lg:size-8" />;
       case "Payment":
-        return <LuBanknote className="h-6 w-6" />;
+        return <LuBanknote className="size-6 lg:size-8" />;
       case "Settings":
-        return <LuSettings className="h-6 w-6" />;
+        return <LuSettings className="size-6 lg:size-8" />;
       default:
-        return <div className="h-6 w-6" />;
+        return <div className="size-6 lg:size-8" />;
     }
   };
 
@@ -41,10 +41,12 @@ export default function IconGrid() {
       {icons.map((item, index) => (
         <div
           key={index}
-          className="bg-white text-black rounded-md p-4 flex flex-col items-center justify-center h-24"
+          className="bg-white rounded-md text-black p-4 flex flex-col justify-between h-24"
         >
-          <div className="mb-2">{getIcon(item.name)}</div>
-          <p className="text-xs text-center">{item.name}</p>
+          <div className="mb-2 text-[#030080]">{getIcon(item.name)}</div>
+          <span className="text-xs lg:text-md font-semibold tracking-wide">
+            {item.name}
+          </span>
         </div>
       ))}
     </div>

@@ -30,7 +30,7 @@ export default function TypographyCard({
         colors,
       }}
     >
-      <div className="bg-black text-white p-6 min-h-screen">
+      <div className="bg-black text-white p-6 mt-24">
         <div className="max-w-6xl mx-auto">
           <FontHeader />
           <hr className="border-gray-700 my-6" />
