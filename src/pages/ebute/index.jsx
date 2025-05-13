@@ -62,7 +62,22 @@ const Ebute = () => {
       <TypographyCard {...montserratData} />
       <LearnCard
         title="Achievements and learnings"
-        description={`<p>This project marked the very first task I undertook upon joining Ebute truck management App. Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of the work, despite its imperfections.</p> <p>One of the most valuable lessons I gained from this experience was the importance of time management.</p><p>That experience taught me a lot about planning, prioritizing, and managing expectations, Skills that have been crucial in every project since.</p>`}
+        description={`
+        <p>
+          This project marked the very first task I undertook upon joining Ebute Truck Management App.
+          Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of
+          the work, despite its imperfections.
+        </p>
+
+        <p>
+          One of the most valuable lessons I gained from this experience was the importance of time management.
+        </p>
+
+        <p>
+          That experience taught me a lot about planning, prioritizing, and managing expectations—
+          skills that have been crucial in every project since.
+        </p>
+  `}
       />
     </div>
   );

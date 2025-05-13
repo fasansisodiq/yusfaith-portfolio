@@ -1,6 +1,6 @@
 //pages
 import RootLayout from "./layout/RootLayout";
-import LandingPage from "./Pages/landing";
+import LandingPage from "./pages/landing";
 
 // React Router Setup
 import {

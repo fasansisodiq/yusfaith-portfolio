@@ -6,7 +6,7 @@ const LearnCard = ({ title, description }) => {
           {title}
         </h3>
         <p
-          className="text-base lg:text-2xl w-full lg:max-w-[748px] space-y-4"
+          className="text-base lg:text-2xl w-full lg:max-w-[948px] space-y-4"
           dangerouslySetInnerHTML={{ __html: description }}
         ></p>
       </div>
