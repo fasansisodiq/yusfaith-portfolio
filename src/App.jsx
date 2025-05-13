@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import Navbar from "./components/page-navigation/Navbar";
 import ProjectList from "./components/features/projects/ProjectList";
 import { Element } from "react-scroll";
@@ -7,6 +8,30 @@ import ContactMe from "./components/features/contact-me/ContactMe";
 import Profile from "./components/profile/Profile";
 import PageNavigation from "./components/page-navigation/PageNavigation";
 import { usePortState } from "./hooks/PortfolioContext";
+=======
+import RootLayout from "./layout/RootLayout";
+import LandingPage from "./Pages/landing";
+import Ebute from "./pages/ebute";
+
+// React Router Setup
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+
+// import { usePortState } from "./hooks/PortfolioContext";
+
+const privateRoutes = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<LandingPage />} />
+      <Route path="/ebute" element={<Ebute />} />
+    </Route>
+  )
+);
+>>>>>>> Stashed changes
 
 function App() {
   const { showPageNav, searchQuery } = usePortState();
