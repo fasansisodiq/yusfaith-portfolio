@@ -1,6 +1,7 @@
 //pages
 import RootLayout from "./layout/RootLayout";
 import LandingPage from "./pages/landing";
+import Tracceability from "./pages/traceability";
 
 // React Router Setup
 import {
@@ -17,6 +18,7 @@ const privateRoutes = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<LandingPage />} />
       <Route path="/ebute" element={<Ebute />} />
+      <Route path="/traceability" element={<Tracceability />} />
     </Route>
   )
 );

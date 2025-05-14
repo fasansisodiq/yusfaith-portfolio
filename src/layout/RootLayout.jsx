@@ -9,7 +9,7 @@ const RootLayout = () => {
   return (
     <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
       <Header />
-      <main className="w-full h-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-10 xl:px-0">
+      <main className="w-full h-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 2xl:px-0">
         <Outlet />
       </main>
       <Footer isHidden={isHidden} />

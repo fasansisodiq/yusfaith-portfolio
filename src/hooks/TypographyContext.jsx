@@ -5,16 +5,14 @@ import React, { createContext, useContext } from "react";
 // Define the context data shape with JS comments for clarity
 const TypographyContext = createContext({
   fontName: "",
+  fontFamily: "",
   description: "",
-  headerTitle: "",
-  headerSubtitle: "",
   alphabet: {
     uppercase: "",
     lowercase: "",
     numbers: "",
   },
-  weights: [],
-  icons: [],
+
   colors: [],
 });
 

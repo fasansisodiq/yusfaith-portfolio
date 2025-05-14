@@ -1,8 +1,6 @@
-import { useTypography } from "../../hooks/TypographyContext";
+const weights = ["Regular", "Medium", "Semi Bold", "Bold"];
 
 export default function FontWeights() {
-  const { weights } = useTypography();
-
   return (
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
       {weights.map((weight, index) => {
