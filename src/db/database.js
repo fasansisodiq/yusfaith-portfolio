@@ -12,7 +12,9 @@ import img3 from "../assests/wireframe/payment-success-screen.png";
 import img4 from "../assests/wireframe/Transfer-other-banks.png";
 import img5 from "../assests/wireframe/Transfer-zebrra-wallet.png";
 
-// This section contains the data for the Ebute project page
+//////////////////////////////////////////////////////////////////////
+////// This section contains the data for the Ebute project page//////
+//////////////////////////////////////////////////////////////////////
 export const ebuteData = {
   intro: {
     title: "Ebute",
@@ -94,7 +96,9 @@ export const ebuteData = {
     `,
   },
 };
-
+//////////////////////////////////////////////////////////////////////////////
+////// This section contains the data for the Traceability project page//////
+/////////////////////////////////////////////////////////////////////////////
 export const traceData = {
   overview: {
     title: "Project Overview",
@@ -175,3 +179,8 @@ export const traceData = {
     `,
   },
 };
+
+//////////////////////////////////////////////////////////////////////////
+////// This section contains the data for the Terminal project page//////
+////////////////////////////////////////////////////////////////////////
+export const terminalData = {};

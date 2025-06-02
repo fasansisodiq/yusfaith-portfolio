@@ -1,8 +1,12 @@
 //pages
 import RootLayout from "./layout/RootLayout";
 import LandingPage from "./pages/landing";
+import Ebute from "./pages/ebute";
 import Tracceability from "./pages/traceability";
+import TerminalManagement from "./pages/terminalmgt";
 
+//componenrs
+// import ScrollToTop from "./components/srolltotop/ScrollToTop";
 // React Router Setup
 import {
   createBrowserRouter,
@@ -10,7 +14,6 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import Ebute from "./pages/ebute";
 // import { usePortState } from "./hooks/PortfolioContext";
 
 const privateRoutes = createBrowserRouter(
@@ -19,6 +22,7 @@ const privateRoutes = createBrowserRouter(
       <Route index element={<LandingPage />} />
       <Route path="/ebute" element={<Ebute />} />
       <Route path="/traceability" element={<Tracceability />} />
+      <Route path="/terminal-management" element={<TerminalManagement />} />
     </Route>
   )
 );
@@ -29,6 +33,7 @@ function App() {
   return (
     <>
       <RouterProvider router={privateRoutes} />
+
       {/* <div className="w-full h-full flex flex-col px-5 md:px-10 lg:px-20 xl:px-30">
         <Navbar />
         <div className="flex flex-col  mt-20">

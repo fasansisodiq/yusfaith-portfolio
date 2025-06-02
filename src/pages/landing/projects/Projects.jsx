@@ -27,7 +27,7 @@ const projects = [
     image: ErpImg,
     title: "ERP",
     description: "Terminal management",
-    href: "/erp",
+    href: "/terminal-management",
   },
 ];
 

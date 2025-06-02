@@ -6,13 +6,15 @@ import SearchBox from "../../components/seachbar/SearchBox";
 import AboutMe from "./about-me/AboutMe";
 import TestimonialCard from "./our-clients/TestimonialCard";
 import FloatingNav from "../../components/ui/FloatingNav";
+import { ProjectList } from "./projects";
 
 const LandingPage = () => {
   return (
     <div className="text-white">
       <Hero />
       <SearchBox />
-      <Projects />
+      {/* <Projects /> */}
+      <ProjectList />
       <AboutMe />
       <TestimonialCard />
       <ContactMe />
