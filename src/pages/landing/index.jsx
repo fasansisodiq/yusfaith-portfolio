@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import ContactMe from "../../components/features/contact-me/ContactMe";
-import Projects from "./projects/Projects";
+// import Projects from "./projects/Projects";
 import Hero from "./hero/Hero";
 import SearchBox from "../../components/seachbar/SearchBox";
 import AboutMe from "./about-me/AboutMe";
