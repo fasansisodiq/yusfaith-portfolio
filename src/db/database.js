@@ -11,6 +11,11 @@ import img2 from "../assests/wireframe/Payment-details.png";
 import img3 from "../assests/wireframe/payment-success-screen.png";
 import img4 from "../assests/wireframe/Transfer-other-banks.png";
 import img5 from "../assests/wireframe/Transfer-zebrra-wallet.png";
+import terminalIntro from "../assests/terminalmgt/terminal_intro.png";
+import terminalAims from "../assests/terminalmgt/terminal_aims.png";
+import terminalUser from "../assests/terminalmgt/terminal_user.png";
+//icons
+import { FaQuoteLeft } from "react-icons/fa6";
 
 //////////////////////////////////////////////////////////////////////
 ////// This section contains the data for the Ebute project page//////
@@ -183,4 +188,73 @@ export const traceData = {
 //////////////////////////////////////////////////////////////////////////
 ////// This section contains the data for the Terminal project page//////
 ////////////////////////////////////////////////////////////////////////
-export const terminalData = {};
+export const terminalData = {
+  overview: {
+    title: "Project Overview",
+    description:
+      "The project aimed to replace fragmented workflows with an integrated platform that supports departments such as finance, inventory, sales, HR, and operations.",
+    image: terminalIntro,
+    imageAlt: "Terminal Management App",
+  },
+  challenge: {
+    title: "The Challenge",
+    description: "Here are 4 common challenges affecting ERP systems:",
+    challanges: [
+      {
+        icon: FaQuoteLeft,
+        quote: "User Resistance to Change",
+      },
+      {
+        icon: FaQuoteLeft,
+        quote: "High Implementation Costs",
+      },
+      {
+        icon: FaQuoteLeft,
+        quote: "Data Migration Issues",
+      },
+      {
+        icon: FaQuoteLeft,
+        quote: "Customization and Integration Difficulties",
+      },
+    ],
+  },
+  aims: {
+    title_one: "Project aims and objectives",
+    description:
+      "To design and implement a centralized ERP system that enhances efficiency, accuracy, and collaboration across all departments within Starlink Global Ideal Limited.",
+    image: terminalAims,
+  },
+  userInterface: {
+    title_one: "Users Interface",
+    title_two: "for Administrators",
+    image: terminalUser,
+  },
+  userFlow: {
+    title_one: "User flow",
+    description:
+      "Creating user flow for the application set out the paths users will follow in order to achieve their goals and visualize how the users is expected to move through the EBUTE App",
+    image: flowchart,
+  },
+  typography: {
+    fontName: "Inter",
+    description:
+      "Inter is a modern, geometric sans-serif typeface designed with clarity and versatility in mind.",
+    fontFamily: "Inter, sans-serif",
+    colors: [
+      { hex: "#030080" },
+      { hex: "#FFFFFF" },
+      { hex: "#EB5017" },
+      { hex: "#EEEEEE" },
+    ],
+  },
+  learnings: {
+    title: "Achievements and Learnings",
+    description: `
+     <p>This project marked the very first task I undertook upon joining Ebute truck management App. Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of the work, despite its imperfections.</p>
+
+    <p>One of the most valuable lessons I gained from this experience was the importance of time management.</p>
+
+    <p>That experience taught me a lot about planning, prioritizing, and managing expectations, Skills that have been crucial in every project since.</p>
+    `,
+  },
+};
