@@ -1,0 +1,22 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { IconArrowDown } from "@tabler/icons-react";
+
+export const CtaButtons = () => {
+  return (
+    <div className="flex items-center gap-6">
+      <Button
+        variant="primary"
+        className="h-12 bg-white text-black rounded-full px-6"
+      >
+        Let's Talk
+      </Button>
+      <Button
+        variant="outline"
+        className="h-12 rounded-full bg-transparent border-gray-700 text-white px-6"
+      >
+        Download CV <IconArrowDown />
+      </Button>
+    </div>
+  );
+};
