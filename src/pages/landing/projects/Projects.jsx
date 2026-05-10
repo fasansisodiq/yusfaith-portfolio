@@ -52,7 +52,7 @@ function Project() {
             }
           >
             <div className="flex items-start md:items-center">
-              <LuFigma className="size-5 md:size-6 mt-1 md:mt-0 flex-shrink-0" />
+              <LuFigma className="size-5 md:size-6 mt-1 md:mt-0 shrink-0" />
               <span className="mx-3">|</span>
               <h4
                 onClick={() => navigate(item.href)}

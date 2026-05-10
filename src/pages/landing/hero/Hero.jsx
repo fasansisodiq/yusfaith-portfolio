@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="w-full h-full py-24">
       <div className="flex flex-col md:flex-row justify-between items-center h-full gap-10">
-        <div className="text-center md:text-left order-2 md:order-none">
+        <div className="text-center md:text-left order-2 md:order-0">
           <h2 className="text-3xl lg:text-5xl xl:text-6xl font-bold uppercase mb-6">
             UI/UX <span className="font-rubik-dirty">Designer.</span> <br />
             Framer <span className="font-rubik-dirty">Developer.</span>
@@ -25,8 +25,8 @@ const Hero = () => {
             }
           />
         </div>
-        <div className="order-1 md:order-none">
-          <div className="relative w-64 h-auto lg:w-96 xl:w-[25rem] rounded-full overflow-hidden ">
+        <div className="order-1 md:order-0">
+          <div className="relative w-64 h-auto lg:w-96 xl:w-100 rounded-full overflow-hidden ">
             <div className="absolute w-full h-full border-3 border-white rounded-full"></div>
             <img
               loading="lazy"

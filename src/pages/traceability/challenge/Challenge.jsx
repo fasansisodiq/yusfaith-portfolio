@@ -29,7 +29,7 @@ const Challenge = ({ title, description, challenges }) => {
               onClick={() => toggleShowMore(index)}
               className="flex items-center justify-between"
             >
-              <h3 className="text-base lg:text-2xl !text-black font-semibold w-[calc(100%-3rem)]">
+              <h3 className="text-base lg:text-2xl text-black! font-semibold w-[calc(100%-3rem)]">
                 {item.title}
               </h3>
               {/* Toggle button */}

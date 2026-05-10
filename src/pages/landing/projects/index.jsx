@@ -78,7 +78,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       className="group relative flex items-center justify-between border-b-2 border-white py-4 transition-colors duration-500 md:py-8"
     >
       <div className="flex items-start lg:items-center">
-        <LuFigma className="size-5 md:size-6 mt-1 md:mt-0 flex-shrink-0 mr-3" />
+        <LuFigma className="size-5 md:size-6 mt-1 md:mt-0 shrink-0 mr-3" />
         <div className="flex flex-col lg:flex-row lg:items-center border-l border-gray-300 pl-3 ">
           <motion.span
             variants={{

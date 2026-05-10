@@ -21,7 +21,7 @@ const Challenges = () => {
               className="bg-white rounded-md p-6 flex flex-col space-y-4"
             >
               <span>{<item.icon />}</span>
-              <p className="!text-black">{item.quote}</p>
+              <p className="text-black!">{item.quote}</p>
             </div>
           );
         })}

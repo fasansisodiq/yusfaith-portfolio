@@ -25,7 +25,7 @@ function Navbar() {
         >
           <button
             onClick={""}
-            className="slider-container h-8 sm:h-10 md:h-12 lg:h-14 xl:h-15 p-1 flex flex-row justify-end items-center rounded-full border-2 border-slate-100  overflow-auto  [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+            className="slider-container h-8 sm:h-10 md:h-12 lg:h-14 xl:h-15 p-1 flex flex-row justify-end items-center rounded-full border-2 border-slate-100  overflow-auto  [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none"
           >
             <div className=" capitalize text-[0.6rem] sm:text-xs md:text-sm  lg:text-lg xl:text-lg ">
               welcome !!! need our service? contact us
@@ -33,7 +33,7 @@ function Navbar() {
           </button>
         </Link>
         <Button
-          className="slider-container [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          className="slider-container [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none"
           to={"ContactMe"}
           label={"contact me"}
         />

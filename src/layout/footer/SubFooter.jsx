@@ -39,10 +39,10 @@ const socialLinks = [
 const SubFooter = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between w-full text-white pb-32 gap-6">
-      <div className="order-2 md:order-none text-sm md:text-base">
+      <div className="order-2 md:order-0 text-sm md:text-base">
         Abdulraheem Yuusuf 2024 ⓒ
       </div>
-      <div className="order-1 md:order-none flex items-center justify-center">
+      <div className="order-1 md:order-0 flex items-center justify-center">
         {socialLinks.map((data, index) => (
           <Link
             key={index}
