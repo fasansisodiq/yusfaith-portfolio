@@ -11,7 +11,7 @@
 :root {
   --bbackground: #ffffff;
   --bforeground: #858a84;
-  --background: oklch(1 0 0);
+  --bgray: #999999 --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -48,6 +48,7 @@
     1.3571428571428572rem + 0.7142857142857143vw,
     2rem
   );
+  --custom-width: 78rem;
 }
 
 html,
@@ -86,9 +87,8 @@ h6 {
   --font-rubik-dirty: "Rubik Dirt", system-ui;
   --btn-primary: var(--bbackground);
   --btn-secondary: var(--bforeground);
-}
-@theme {
   --font-montserrat: "Montserrat", sans-serif;
+  --max-width-container: var(--custom-width);
 }
 
 .slider-container {
@@ -183,6 +183,7 @@ h6 {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --max-width: 1248px;
 }
 
 @theme inline {
@@ -227,6 +228,7 @@ h6 {
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
   --text-count: var(--text-counter);
+  --color-baccent: var(--bgray);
 }
 
 @layer base {

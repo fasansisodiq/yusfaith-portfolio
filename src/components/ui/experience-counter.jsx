@@ -1,5 +1,6 @@
 import { div } from "framer-motion/client";
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 const data = [
   {
@@ -19,13 +20,21 @@ const data = [
   },
 ];
 
-export const ExperienceCounter = () => {
+export const ExperienceCounter = ({
+  className,
+  titleClassName,
+  subtitleClassName,
+}) => {
   return (
-    <div className="flex items-center gap-6">
+    <div className={twMerge("flex items-center gap-6", className)}>
       {data.map((item) => (
         <div key={item.id} className="flex flex-col">
-          <span className="text-count font-bold">{item.count}</span>
-          <span className="text-xs text-gray-400">{item.label}</span>
+          <span className={twMerge("text-count font-bold", titleClassName)}>
+            {item.count}
+          </span>
+          <span className={twMerge("text-xs text-gray-400", subtitleClassName)}>
+            {item.label}
+          </span>
         </div>
       ))}
     </div>
