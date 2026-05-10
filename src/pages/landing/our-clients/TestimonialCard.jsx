@@ -48,7 +48,6 @@ function TestimonialCard() {
                   <img
                     src={data.src}
                     alt={`Photo of ${data.name}`}
-                    fill
                     className="object-cover absolute left-1/2 -top-10 lg:-top-16 -translate-x-1/2 transform bg-blend-multiply opacity-85 hover:opacity-100 transition-all duration-500"
                   />
                 </div>

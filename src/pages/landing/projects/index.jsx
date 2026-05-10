@@ -29,6 +29,12 @@ export const ProjectList = () => {
           imgSrc={TraceImg}
           href="/terminal-management"
         />
+        <Link
+          heading="Quicklist"
+          subheading="Terminal management"
+          imgSrc={TraceImg}
+          href="/quicklist"
+        />
       </div>
     </section>
   );

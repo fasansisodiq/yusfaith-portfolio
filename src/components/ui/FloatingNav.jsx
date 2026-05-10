@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { FaBookOpen, FaUser, FaEnvelope } from "react-icons/fa6";
-import Button from "./Button";
+import { Button } from "@/components/ui/Button";
 
 const navLinks = [
   { icon: <FaBookOpen />, name: "Projects", href: "#projects" },
@@ -13,7 +13,7 @@ const FloatingNav = ({ className }) => {
     <nav
       className={twMerge(
         "sticky bottom-0 left-0 w-full flex items-center justify-center gap-4 pb-4 z-50",
-        className
+        className,
       )}
     >
       {navLinks.map((link, index) => (
@@ -24,8 +24,7 @@ const FloatingNav = ({ className }) => {
           onClick={() => {
             window.location.href = link.href;
           }}
-          className="hover:scale-115 hover:-translate-y-2.5 hidden md:block"
-          btnclassName="cursor-pointer"
+          className="hover:scale-115 hover:-translate-y-2.5 hidden md:block cursor-pointer"
         />
       ))}
     </nav>

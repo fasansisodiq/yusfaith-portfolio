@@ -1,6 +1,7 @@
 import { usePortState } from "../../../hooks/PortfolioContext";
 import BorderHider from "../../ui/BorderHider";
-import Button from "../../ui/Button";
+// import Button from "../../ui/Button";
+import { Button } from "@/components/ui/Button";
 import { LuSend } from "react-icons/lu";
 
 import Input from "../../utils/Input";

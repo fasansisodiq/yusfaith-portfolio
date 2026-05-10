@@ -4,6 +4,7 @@ import LandingPage from "./pages/landing";
 import Ebute from "./pages/ebute";
 import Tracceability from "./pages/traceability";
 import TerminalManagement from "./pages/terminalmgt";
+import Quicklist from "./pages/quicklist";
 
 //componenrs
 // import ScrollToTop from "./components/srolltotop/ScrollToTop";
@@ -23,8 +24,9 @@ const privateRoutes = createBrowserRouter(
       <Route path="/ebute" element={<Ebute />} />
       <Route path="/traceability" element={<Tracceability />} />
       <Route path="/terminal-management" element={<TerminalManagement />} />
-    </Route>
-  )
+      <Route path="/quicklist" element={<Quicklist />} />
+    </Route>,
+  ),
 );
 
 function App() {

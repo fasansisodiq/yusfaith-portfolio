@@ -258,3 +258,76 @@ export const terminalData = {
     `,
   },
 };
+//////////////////////////////////////////////////////////////////////////
+////// This section contains the data for the quicklist project page//////
+////////////////////////////////////////////////////////////////////////
+export const quicklistData = {
+  overview: {
+    title: "Project Overview",
+    description:
+      "Quicklist is a high-performance real estate ecosystem designed to streamline the selling, leasing, and renting of residential and commercial properties. The platform serves as a centralized marketplace, connecting property seekers with verified listings while providing real estate professionals with robust tools to manage their portfolios.",
+    image: terminalUser,
+    imageAlt: "Quicklist App",
+  },
+  challenge: {
+    title: "The Challenge",
+    description: "Here are 4 common challenges affecting ERP systems:",
+    challanges: [
+      {
+        icon: FaQuoteLeft,
+        quote: "User Resistance to Change",
+      },
+      {
+        icon: FaQuoteLeft,
+        quote: "High Implementation Costs",
+      },
+      {
+        icon: FaQuoteLeft,
+        quote: "Data Migration Issues",
+      },
+      {
+        icon: FaQuoteLeft,
+        quote: "Customization and Integration Difficulties",
+      },
+    ],
+  },
+  aims: {
+    title_one: "Project aims and objectives",
+    description:
+      "To design and implement a centralized ERP system that enhances efficiency, accuracy, and collaboration across all departments within Starlink Global Ideal Limited.",
+    image: terminalAims,
+  },
+  userInterface: {
+    title_one: "Users Interface",
+    title_two: "for Administrators",
+    image: terminalUser,
+  },
+  userFlow: {
+    title_one: "User flow",
+    description:
+      "Creating user flow for the application set out the paths users will follow in order to achieve their goals and visualize how the users is expected to move through the EBUTE App",
+    image: flowchart,
+  },
+  typography: {
+    fontName: "Inter",
+    description:
+      "Inter is a modern, geometric sans-serif typeface designed with clarity and versatility in mind.",
+    fontFamily: "Inter, sans-serif",
+    colors: [
+      { hex: "#030080" },
+      { hex: "#FFFFFF" },
+      { hex: "#EB5017" },
+      { hex: "#EEEEEE" },
+    ],
+  },
+  learnings: {
+    title: "Achievements and Learnings",
+    description: `
+     <p>This project marked the very first task I undertook upon joining Ebute truck management App. Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of the work, despite its imperfections.</p>
+
+    <p>One of the most valuable lessons I gained from this experience was the importance of time management.</p>
+
+    <p>That experience taught me a lot about planning, prioritizing, and managing expectations, Skills that have been crucial in every project since.</p>
+    `,
+  },
+};
