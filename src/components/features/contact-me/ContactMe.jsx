@@ -5,38 +5,58 @@ import { Button } from "@/components/ui/Button";
 import { LuSend } from "react-icons/lu";
 
 import Input from "../../utils/Input";
+import { SectionTitle } from "../../ui/section-title";
+import { IconLink, IconMapPin, IconMail } from "@tabler/icons-react";
+import { ContactForm } from "../../ui/contact-form";
 
-function ContactMe() {
+const contactInfo = [
+  {
+    icon: IconMail,
+    text: "yusfaith0102@gmail.com",
+  },
+  {
+    icon: IconMapPin,
+    text: "Lagos, Nigeria",
+  },
+  {
+    icon: IconLink,
+    text: "Available on Behance & LinkedIn",
+  },
+];
+
+function ContactMe({ icon: IconComponent, text }) {
   const { showPageNav } = usePortState();
   return (
     <section
       id="contactMe"
-      className={`w-full  ${
-        showPageNav ? "h-screen" : "pt-10 lg:pt-20 mb-24"
-      } text-white flex flex-col justify-center sm:pt-30 lg:pt-20 `}
+      className={`w-full  ${showPageNav ? "h-screen" : "py-24"} text-white `}
     >
-      <h3 className="capitalize text-2xl sm:text-3xl lg:text-5xl xl:text-5xl font-semibold lg:pt-10 pb-5 ">
-        contact me
-      </h3>
-      <form className="flex flex-col gap-6 lg:gap-10">
-        <Input type="text" placeholder="name" />
-        <Input type="email" placeholder="email" />
-        <BorderHider>
-          <textarea
-            type="text"
-            className={`w-full h-40 sm:h-50 outline-0 placeholder:text-xl placeholder:text-white placeholder:capitalize pt-4 pl-4 `}
-            placeholder="message"
-          />
-        </BorderHider>
-        <Button
-          type="Submit"
-          label="Submit"
-          className="w-fit"
-          right_icon={
-            <LuSend className="group-hover:rotate-45 transition ease-in-out duration-300" />
-          }
-        />
-      </form>
+      <SectionTitle
+        title="contact me"
+        subtitle="Get in touch"
+        className="mb-8"
+      />
+
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+        <div className="flex flex-col gap-12">
+          <p className="text-white/70">
+            Have a project in mind or want to collaborate? I'd love to hear from
+            you. Let's create something great together.
+          </p>
+
+          <ul className="grid gap-3">
+            {contactInfo.map((info, index) => (
+              <li key={index} className="flex items-center gap-4">
+                <span className="w-8 h-8 flex items-center justify-center rounded-md border border-white/10 bg-card-foreground">
+                  <info.icon className="size-4" stroke={1.5} />
+                </span>
+                <span className="text-white/70">{info.text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <ContactForm className="w-full max-w-[47.296rem]" />
+      </div>
     </section>
   );
 }

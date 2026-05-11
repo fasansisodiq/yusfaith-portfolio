@@ -13,7 +13,7 @@ export const CtaButtons = () => {
       </Button>
       <Button
         variant="outline"
-        className="h-12 rounded-full bg-transparent border-gray-700 text-white px-6"
+        className="h-12 rounded-full bg-card-foreground border border-white/10 text-white px-6"
       >
         Download CV <IconArrowDown />
       </Button>

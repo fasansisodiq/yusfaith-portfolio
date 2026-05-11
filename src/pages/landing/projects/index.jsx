@@ -32,7 +32,7 @@ const projectData = [
       "The Traceability App is designed to help businesses track supply chains",
     imgSrc: ErpImg,
     linkText: "Saas",
-    heref: "/traceability",
+    href: "/traceability",
   },
   {
     icon: IconGridPattern,

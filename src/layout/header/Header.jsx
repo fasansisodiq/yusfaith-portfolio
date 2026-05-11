@@ -1,8 +1,13 @@
 import { FiMenu } from "react-icons/fi";
 import { Button } from "@/components/ui/Button";
 import { Link } from "react-router-dom";
-import { twMerge } from "tailwind-merge";
-import { HeaderMenu } from "../../components/ui/header-menu";
+
+const menuItems = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Projects", path: "/projects" },
+  { name: "Contact", path: "/contact" },
+];
 
 const Header = () => {
   return (
@@ -18,7 +23,21 @@ const Header = () => {
           </div>
           <div>
             <FiMenu size={30} className="md:hidden text-white" />
-            <HeaderMenu />
+
+            <div className="hidden md:flex items-center gap-6">
+              {menuItems.map((item) => {
+                const isActive = window.location.pathname === item.path;
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className="text-white hover:text-gray-300 transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

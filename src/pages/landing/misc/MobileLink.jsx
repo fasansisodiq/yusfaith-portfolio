@@ -56,7 +56,7 @@ export const MobileLink = ({
                 {sn}
               </span> */}
               {IconComponent && (
-                <div className="h-10 w-10 flex items-center justify-center border border-white/20 bg-[#141414] rounded-xl">
+                <div className="h-10 w-10 flex items-center justify-center border border-white/10 bg-card-foreground rounded-xl">
                   <IconComponent className="size-5 text-gray-300" />
                 </div>
               )}

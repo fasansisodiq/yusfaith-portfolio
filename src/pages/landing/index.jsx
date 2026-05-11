@@ -4,33 +4,18 @@ import ContactMe from "../../components/features/contact-me/ContactMe";
 import Hero from "./hero/Hero";
 import AboutMe from "./about-me/AboutMe";
 import TestimonialCard from "./our-clients/TestimonialCard";
-import FloatingNav from "../../components/ui/FloatingNav";
+// import FloatingNav from "../../components/ui/FloatingNav";
 import { ProjectList } from "./projects";
 
 const LandingPage = () => {
   return (
-    <div className="text-white">
+    <div>
       <Hero />
-
       <ProjectList />
       <AboutMe />
       <TestimonialCard />
       <ContactMe />
-      <FloatingNav />
-      {/* <Profile /> */}
-      {/* {showPageNav && <PageNavigation />} */}
-
-      {/* <div className={`${searchQuery && "target"} `}> */}
-
-      {/* </div> */}
-      {/* <div className={`${searchQuery && "target"} `}> */}
-      {/* </div> */}
-      {/* <div className={`${searchQuery && "target"} `}> */}
-
-      {/* </div> */}
-      {/* <div className={`${searchQuery && "target"} `}> */}
-
-      {/* </div> */}
+      {/* <FloatingNav /> */}
     </div>
   );
 };

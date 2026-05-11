@@ -11,4 +11,3 @@ function ProfilePics() {
 }
 
 export default ProfilePics;
-// bg-[url(sodiq3.png)]

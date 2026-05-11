@@ -52,8 +52,8 @@ export const Link = ({
       <div className="flex items-start lg:items-center gap-6">
         <span className="text-gray-500">{sn}</span>
         {IconComponent && (
-          <div className="h-9 w-9 flex items-center justify-center border border-white/20 bg-[#141414] rounded-lg shrink-0">
-            <IconComponent className="size-4" />
+          <div className="h-9 w-9 flex items-center justify-center border border-white/10 bg-card-foreground rounded-lg shrink-0">
+            <IconComponent className="size-4" stroke={1.5} />
           </div>
         )}
         <div>
@@ -83,7 +83,7 @@ export const Link = ({
               </motion.span>
             ))}
           </motion.span>
-          <span className="relative z-10 mt-2 lg:mt-0 block text-sm text-gray-300 transition-colors duration-500">
+          <span className="relative z-10 mt-2 lg:mt-0 block text-sm text-white/70 transition-colors duration-500">
             {subheading}
           </span>
         </div>
@@ -125,7 +125,7 @@ export const Link = ({
         />
       </motion.div>
 
-      <div className="relative flex items-center text-xs text-gray-500 z-10 p-4">
+      <div className="relative flex items-center text-xs font-medium tracking-wider text-gray-500 z-10 p-4">
         {linkText}
         <IconArrowUpRight className="size-4" />
       </div>
