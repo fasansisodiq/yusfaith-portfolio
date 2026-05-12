@@ -1,4 +1,6 @@
 import React from "react";
+import { SectionTitle } from "../../../components/ui/section-title";
+import { StaggerTestimonials } from "../../../components/stagger-testimonials";
 
 const testimonials = [
   {
@@ -27,12 +29,13 @@ const testimonials = [
 function TestimonialCard() {
   return (
     <section className="w-full h-fit flex flex-col gap-5 pt-10 py-24">
-      {/* Section Title */}
-      <h1 className="self-start pb-0 pt-10 lg:pb-6 capitalize font-semibold text-2xl lg:text-5xl text-white">
-        hear from our clients
-      </h1>
+      <SectionTitle
+        title="hear from our clients"
+        subtitle="social profile"
+        className="mb-8"
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-20">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-20">
         {testimonials.map((data, idx) => (
           <div
             key={idx}
@@ -40,7 +43,7 @@ function TestimonialCard() {
               "relative border-2 border-slate-300/30 rounded-lg pt-10 pb-6 px-6 text-center text-white mb-10 last-of-type:mb-0 md:mb-0"
             }
           >
-            {/* Image positioned at the top middle, half outside the card */}
+          
             <div className="absolute left-1/2 -top-10 lg:-top-16 -translate-x-1/2 transform ">
               <div className="relative">
                 <div className="absolute -right-1 top-0 h-16 w-16 rounded-full" />
@@ -65,7 +68,9 @@ function TestimonialCard() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+
+      <StaggerTestimonials />
     </section>
   );
 }

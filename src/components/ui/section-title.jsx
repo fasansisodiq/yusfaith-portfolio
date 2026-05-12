@@ -7,7 +7,7 @@ export const SectionTitle = ({ subtitle, title, className }) => {
       <span className="text-gray-500 text-xs font-medium uppercase tracking-widest">
         {subtitle}
       </span>
-      <h2 className="text-4xl text-white font-bold">{title}</h2>
+      <h2 className="text-4xl text-white font-bold capitalize">{title}</h2>
     </div>
   );
 };
