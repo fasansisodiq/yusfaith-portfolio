@@ -10,8 +10,6 @@ import {
 import EbuteImg from "../../../assests/images/EbuteImg.png";
 import ErpImg from "../../../assests/images/ErpImg.png";
 import TraceImg from "../../../assests/images/TraceImg.png";
-import { LuFigma } from "react-icons/lu";
-import { div } from "framer-motion/client";
 import { SectionTitle } from "../../../components/ui/section-title";
 import { Link } from "../misc/Link";
 import { MobileLink } from "../misc/MobileLink";
