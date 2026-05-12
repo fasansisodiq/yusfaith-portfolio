@@ -285,7 +285,7 @@ export const StaggerTestimonials = () => {
           onClick={() => handleMove(-1)}
           className={cn(
             "flex h-14 w-14 items-center justify-center text-2xl transition-colors rounded-full",
-            "bg-background border-2 border-border hover:bg-primary hover:text-primary-foreground",
+            " border-2 border-border hover:bg-primary hover:text-primary-foreground",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
           )}
           aria-label="Previous testimonial"
@@ -296,7 +296,7 @@ export const StaggerTestimonials = () => {
           onClick={() => handleMove(1)}
           className={cn(
             "flex h-14 w-14 items-center justify-center text-2xl transition-colors rounded-full",
-            "bg-background border-2 border-border hover:bg-primary hover:text-primary-foreground",
+            " border-2 border-border hover:bg-primary hover:text-primary-foreground",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
           )}
           aria-label="Next testimonial"
