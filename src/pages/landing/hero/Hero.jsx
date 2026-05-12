@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../../../components/ui/button";
 import { ExperienceCounter } from "../../../components/ui/experience-counter";
 import { CtaButtons } from "../../../components/ui/cta-buttons";
 import { HeroImg } from "../../../components/ui/hero-img";
