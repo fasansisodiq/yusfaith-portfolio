@@ -1,6 +1,7 @@
 import React from "react";
-import { Button } from "./ui/button";
+
 import { IconArrowDown } from "@tabler/icons-react";
+import { Button } from "./button";
 
 export const CtaButtons = () => {
   return (
