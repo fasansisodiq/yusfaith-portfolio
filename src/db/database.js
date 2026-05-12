@@ -83,22 +83,9 @@ export const ebuteData = {
   },
   learnings: {
     title: "Achievements and Learnings",
-    description: `
-      <p>
-        This project marked the very first task I undertook upon joining Ebute Truck Management App.
-        Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of
-        the work, despite its imperfections.
-      </p>
-
-      <p>
-        One of the most valuable lessons I gained from this experience was the importance of time management.
-      </p>
-
-      <p>
-        That experience taught me a lot about planning, prioritizing, and managing expectations—
-        skills that have been crucial in every project since.
-      </p>
-    `,
+    subtitle: "What This Project Taught Me",
+    description:
+      "This project marked the very first task I undertook upon joining Ebute Track Management App. Looking back at the design now, I'm filled with gratitude for how far I've come and am proud of the work. There are no imperfections.",
   },
 };
 //////////////////////////////////////////////////////////////////////////////
@@ -175,13 +162,9 @@ export const traceData = {
 
   learnings: {
     title: "Achievements and Learnings",
-    description: `
-     <p>This project marked the very first task I undertook upon joining Ebute truck management App. Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of the work, despite its imperfections.</p>
-
-    <p>One of the most valuable lessons I gained from this experience was the importance of time management.</p>
-
-    <p>That experience taught me a lot about planning, prioritizing, and managing expectations, Skills that have been crucial in every project since.</p>
-    `,
+    subtitle: "What This Project Taught Me",
+    description:
+      "This project marked the very first task I undertook upon joining Ebute Track Management App. Looking back at the design now, I'm filled with gratitude for how far I've come and am proud of the work. There are no imperfections.",
   },
 };
 
@@ -249,13 +232,9 @@ export const terminalData = {
   },
   learnings: {
     title: "Achievements and Learnings",
-    description: `
-     <p>This project marked the very first task I undertook upon joining Ebute truck management App. Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of the work, despite its imperfections.</p>
-
-    <p>One of the most valuable lessons I gained from this experience was the importance of time management.</p>
-
-    <p>That experience taught me a lot about planning, prioritizing, and managing expectations, Skills that have been crucial in every project since.</p>
-    `,
+    subtitle: "What This Project Taught Me",
+    description:
+      "This project marked the very first task I undertook upon joining Ebute Track Management App. Looking back at the design now, I'm filled with gratitude for how far I've come and am proud of the work. There are no imperfections.",
   },
 };
 //////////////////////////////////////////////////////////////////////////
@@ -322,12 +301,8 @@ export const quicklistData = {
   },
   learnings: {
     title: "Achievements and Learnings",
-    description: `
-     <p>This project marked the very first task I undertook upon joining Ebute truck management App. Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of the work, despite its imperfections.</p>
-
-    <p>One of the most valuable lessons I gained from this experience was the importance of time management.</p>
-
-    <p>That experience taught me a lot about planning, prioritizing, and managing expectations, Skills that have been crucial in every project since.</p>
-    `,
+    subtitle: "What This Project Taught Me",
+    description:
+      "This project marked the very first task I undertook upon joining Ebute Track Management App. Looking back at the design now, I'm filled with gratitude for how far I've come and am proud of the work. There are no imperfections.",
   },
 };

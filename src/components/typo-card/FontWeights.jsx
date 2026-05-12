@@ -1,25 +1,20 @@
-const weights = ["Regular", "Medium", "Semi Bold", "Bold"];
-
 export default function FontWeights() {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-      {weights.map((weight, index) => {
-        const fontWeight =
-          weight === "Regular"
-            ? "font-normal"
-            : weight === "Medium"
-            ? "font-medium"
-            : weight === "Semi Bold"
-            ? "font-semibold"
-            : "font-bold";
+    <div className="flex gap-4">
+      {Array.from({ length: 4 }, (_, index) => {
+        const opacity = 1 - index * 0.2;
 
         return (
-          <div key={index} className="flex justify-center">
+          <div key={index} className="flex items-center">
             <p
-              className={`flex flex-col text-4xl md:text-8xl lg:text-[16rem] text-center  ${fontWeight}`}
+              className="flex flex-col text-center font-bold"
+              style={{
+                fontSize: `clamp(${3 - index * 0.5}rem, ${12 - index * 2}vw, ${12 - index * 2}rem)`,
+                lineHeight: 1.05,
+                opacity,
+              }}
             >
-              <span className="text-sm mb-4">{weight}</span>
-              <span className="bg-black">A</span>
+              <span>A</span>
             </p>
           </div>
         );

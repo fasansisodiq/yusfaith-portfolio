@@ -9,7 +9,7 @@ const RootLayout = () => {
   const location = useLocation();
   const isHidden = location.pathname === "/";
   return (
-    <div className="min-h-screen grid grid-rows-[auto_1fr_auto] bg-black text-white">
+    <div className="min-h-screen grid grid-rows-[auto_1fr_auto] text-white">
       <Header />
       <main className="w-full h-full max-w-container mx-auto px-6 sm:px-8 lg:px-10 2xl:px-0">
         <ScrollToTop />

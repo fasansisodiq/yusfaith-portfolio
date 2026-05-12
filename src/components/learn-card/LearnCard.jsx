@@ -1,15 +1,16 @@
-const LearnCard = ({ title, description }) => {
+import { SectionTitle } from "../ui/section-title";
+
+const LearnCard = ({ title, subtitle, description, children }) => {
   return (
     <section className="pt-24 lg:pt-38">
-      <div className="space-y-4 lg:space-y-10 mb-6 lg:mb-24">
-        <h3 className="flex flex-col text-2xl lg:text-5xl font-semibold uppercase">
-          {title}
-        </h3>
-        <p
-          className="text-base lg:text-2xl w-full lg:max-w-[948px] space-y-4"
-          dangerouslySetInnerHTML={{ __html: description }}
-        ></p>
-      </div>
+      <SectionTitle
+        title={title}
+        subtitle={subtitle}
+        text={description}
+        className="[&>p]:max-w-170 mb-6"
+      />
+
+      <div>{children}</div>
     </section>
   );
 };

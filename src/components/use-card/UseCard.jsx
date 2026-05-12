@@ -7,7 +7,7 @@ const UseCard = ({ title_one, title_two, description, image, imageAlt }) => {
           <br />
           {title_two}
         </h3>
-        <p className="text-base lg:text-2xl w-full lg:max-w-[748px]">
+        <p className="text-base lg:text-2xl w-full lg:max-w-187">
           {description}
         </p>
       </div>

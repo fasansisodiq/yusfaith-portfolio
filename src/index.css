@@ -11,7 +11,8 @@
 :root {
   --bbackground: #ffffff;
   --bforeground: #858a84;
-  --bgray: #999999 --background: oklch(1 0 0);
+  --bgray: #999999;
+  --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -67,6 +68,7 @@
 body {
   height: 100%;
   width: 100%;
+  background-color: black;
   scroll-behavior: smooth;
   font-family:
     "Montserrat",
