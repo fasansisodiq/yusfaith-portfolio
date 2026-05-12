@@ -2,6 +2,7 @@ import React from "react";
 
 import { IconArrowDown } from "@tabler/icons-react";
 import { Button } from "./button";
+//import not working fixed
 
 export const CtaButtons = () => {
   return (
