@@ -28,7 +28,7 @@ const projectData = [
     heading: "Traceability",
     subheading:
       "The Traceability App is designed to help businesses track supply chains",
-    imgSrc: ErpImg,
+    imgSrc: TraceImg,
     linkText: "Saas",
     href: "/traceability",
   },
@@ -36,7 +36,7 @@ const projectData = [
     icon: IconGridPattern,
     heading: "ERP",
     subheading: "Terminal management ERP built for multi-department operations",
-    imgSrc: TraceImg,
+    imgSrc: ErpImg,
     linkText: "Enterprise",
     href: "/terminal-management",
   },

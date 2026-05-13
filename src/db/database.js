@@ -200,6 +200,7 @@ export const terminalData = {
   },
   aims: {
     title: "Project aims and objectives",
+    subtitle: "Defining the Problem",
     description:
       "To design and implement a centralized ERP system that enhances efficiency, accuracy, and collaboration across all departments within Starlink Global Ideal Limited.",
     image: terminalAims,
@@ -210,7 +211,8 @@ export const terminalData = {
     image: terminalUser,
   },
   userFlow: {
-    title_one: "User flow",
+    title: "User flow",
+    subtitle: "Mapping User Journeys",
     description:
       "Creating user flow for the application set out the paths users will follow in order to achieve their goals and visualize how the users is expected to move through the EBUTE App",
     image: flowchart,
@@ -220,16 +222,11 @@ export const terminalData = {
     description:
       "Inter is a modern, geometric sans-serif typeface designed with clarity and versatility in mind.",
     fontFamily: "Inter, sans-serif",
-    colors: [
-      { hex: "#030080" },
-      { hex: "#FFFFFF" },
-      { hex: "#EB5017" },
-      { hex: "#EEEEEE" },
-    ],
+    colors: [{ hex: "#001f3f" }, { hex: "#FFFFFF" }],
   },
   learnings: {
     title: "Achievements and Learnings",
-    subtitle: "What This Project Taught Me",
+    subtitle: "What We Built & Learned",
     description:
       "This project marked the very first task I undertook upon joining Ebute Track Management App. Looking back at the design now, I'm filled with gratitude for how far I've come and am proud of the work. There are no imperfections.",
   },

@@ -4,18 +4,19 @@ import UseCard from "../../components/use-card/UseCard";
 import TypographyCard from "../../components/typo-card/TypographyCard";
 import { terminalData } from "../../db/database";
 import Challenges from "./challenges/Challenges";
-import LearnCard from "../../components/learn-card/LearnCard";
+import Overview from "./overview/Overview";
+import Learn from "./learn/Learn";
 
 const TerminalManagement = () => {
   return (
     <div>
-      <IntroCard {...terminalData.overview} />
+      <Overview {...terminalData.overview} />
       <Challenges />
       <UseCard {...terminalData.aims} />
       <UseCard {...terminalData.userInterface} />
       <UseCard {...terminalData.userFlow} />
       <TypographyCard {...terminalData.typography} />
-      <LearnCard {...terminalData.learnings} />
+      <Learn />
     </div>
   );
 };
