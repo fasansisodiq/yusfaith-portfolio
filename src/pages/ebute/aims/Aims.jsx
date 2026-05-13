@@ -21,11 +21,12 @@ const Aims = () => {
             text=" The aim of this project was to design a digital platform that streamlines
       operations at container terminals, addressing inefficiencies in yard
       management and improving productivity for all stakeholders."
+            color="blue"
           />
           <ul className="mt-8">
             {aimsData.map((aim, index) => (
               <li key={index} className="flex items-start space-x-2 mb-4">
-                <IconCheck className="text-blue-700 mt-1" stroke={1} />
+                <IconCheck className="text-blue-800" stroke={1} />
                 <span className="text-sm text-muted-foreground">{aim}</span>
               </li>
             ))}

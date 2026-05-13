@@ -16,14 +16,19 @@ const Learn = () => {
   const { title, subtitle, description } = ebuteData.learnings;
   return (
     <section className="py-24">
-      <LearnCard title={title} subtitle={subtitle} description={description}>
+      <LearnCard
+        title={title}
+        subtitle={subtitle}
+        description={description}
+        color="blue"
+      >
         <ul className="flex flex-col">
           {lists.map((list, idx) => (
             <li
               key={idx}
-              className="relative text-sm flex items-center gap-2 p-4.5 border-b border-muted-foreground/10"
+              className="relative text-sm flex items-center gap-2 text-muted-foreground p-4.5 border-b border-muted-foreground/10"
             >
-              <span className="absolute top-1/2 left-0 transform -translate-y-1/2 text-muted-foreground">
+              <span className="absolute top-1/2 left-0 transform -translate-y-1/2 text-blue-800">
                 {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
               </span>
               <span className="ml-4.5">{list}</span>

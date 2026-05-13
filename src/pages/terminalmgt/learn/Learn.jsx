@@ -24,7 +24,7 @@ const Learn = () => {
         title={title}
         subtitle={subtitle}
         description={description}
-        className="[&>span]:text-orange-500"
+        className="[&>span]:text-orange-500 [&>span::before]:bg-orange-500"
       >
         <div className="grid md:grid-cols-2 gap-8">
           <ListItem

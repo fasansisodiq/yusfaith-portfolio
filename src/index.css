@@ -94,66 +94,21 @@ body {
   --max-width-container: var(--custom-width);
 }
 
-.slider-container {
-  div {
-    animation: slide 9s linear 0s infinite forwards;
-  }
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
 }
-@keyframes slide {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+::-webkit-scrollbar-track {
+  background: var(--foreground);
 }
-.shake-element {
-  transform: skew(20deg);
-  animation: shake 2s linear infinite alternate;
-}
-@keyframes shake {
-  0% {
-    transform: skewY(20deg);
-  }
-  100% {
-    transform: skewY(-20deg);
-  }
-}
-.slide-right {
-  animation: slide-right 3s ease-in-out forwards;
-}
-@keyframes slide-right {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
-.slide-left {
-  animation: slide-left 2s ease-in-out forwards;
-}
-@keyframes slide-left {
-  0% {
-    transform: translateX(70%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-.rotate-clockwise {
-  animation: rotate 2s linear forwards;
-}
-@keyframes identifier {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+::-webkit-scrollbar-thumb {
+  --scrolbar: #282830;
+  background: var(--scrolbar);
+  border-radius: 2px;
 }
 
+/* ── ANIMATION ── */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

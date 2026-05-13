@@ -10,6 +10,7 @@ const UserInterface = () => {
         title="For Administrators"
         subtitle="USERS INTERFACE"
         className="mb-12"
+        color="blue"
       />
       <div className="w-full">
         <img loading="lazy" decoding="async" src={uiImg} alt="User Interface" />

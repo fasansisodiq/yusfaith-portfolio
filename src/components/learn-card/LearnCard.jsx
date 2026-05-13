@@ -1,7 +1,14 @@
 import { SectionTitle } from "../ui/section-title";
 import { cn } from "../../lib/utils";
 
-const LearnCard = ({ title, subtitle, description, children, className }) => {
+const LearnCard = ({
+  title,
+  subtitle,
+  description,
+  children,
+  className,
+  color,
+}) => {
   return (
     <div>
       <SectionTitle
@@ -9,6 +16,7 @@ const LearnCard = ({ title, subtitle, description, children, className }) => {
         subtitle={subtitle}
         text={description}
         className={cn("[&>p]:max-w-170 mb-6", className)}
+        color={color}
       />
 
       <div>{children}</div>

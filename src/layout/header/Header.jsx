@@ -10,7 +10,7 @@ const menuItems = [
 
 const Header = () => {
   return (
-    <header className="h-20 flex items-center shadow-lg shadow-gray-50/20 z-50">
+    <header className="h-20 flex items-center bg-black/60 backdrop-blur-sm shadow-lg z-50 fixed inset-0">
       <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 2xl:px-0">
         <div className="flex items-center justify-between">
           <div>

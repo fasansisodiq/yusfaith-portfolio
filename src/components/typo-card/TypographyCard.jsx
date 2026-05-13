@@ -28,8 +28,9 @@ export default function TypographyCard({
     <section className="bg-black text-white py-24" style={{ fontFamily }}>
       <SectionTitle
         title={fontName}
-        subtitle="  Typography, Iconography & Colors"
+        subtitle="Typography, Iconography & Colors"
         className="mb-12"
+        color="blue"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">

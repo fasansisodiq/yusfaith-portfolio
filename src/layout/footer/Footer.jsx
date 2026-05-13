@@ -1,42 +1,35 @@
-//images
-import contactImg from "../../assests/images/contactImg.png";
 import SubFooter from "./SubFooter";
 
 const Footer = ({ isHidden }) => {
   return (
     <footer
-      className={`"h-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-0 bg-amber-300" ${
+      className={`"w-full bg-amber-300" ${
         isHidden ? "hidden" : "block text-white"
       }`}
     >
-      <div className="flex items-center justify-center w-full h-full">
-        <div className="flex flex-col space-y-3 w-full text-center sm:text-left">
-          <span className="text-base lg:text-3xl tracking-wide">
+      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
+        <div className="flex flex-col items-center justify-center w-full gap-2.5 ">
+          <span className="text-sm text-muted-foreground tracking-wide">
             Got a project in mind?
           </span>
-          <span className="text-5xl lg:text-7xl xl:text-8xl uppercase font-medium">
-            Let’s talk
+          <span className="text-5xl lg:text-8xl xl:text-[116px] text-center uppercase font-extrabold">
+            Let’s <br />
+            <span className="text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.2)]">
+              talk
+            </span>
           </span>
-          <span className="text-sm lg:text-xl">
+          <span className="text-sm text-muted-foreground">
             Mail me @ :
             <a
-              className="ml-2 underline tracking-wider"
+              className="ml-2 underline tracking-wider text-white"
               href="mailto:yusfaith0102@gmail.com"
             >
               Yusfaith0102@gmail.com
             </a>
           </span>
         </div>
-        <div className="hidden sm:flex w-full h-full justify-end items-center">
-          <img
-            loading="lazy"
-            src={contactImg}
-            alt="contact"
-            className="w-full max-w-2xl h-auto object-cover blur-sm"
-          />
-        </div>
+        <SubFooter />
       </div>
-      <SubFooter />
     </footer>
   );
 };
