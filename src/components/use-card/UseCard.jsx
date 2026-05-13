@@ -1,15 +1,10 @@
-const UseCard = ({ title_one, title_two, description, image, imageAlt }) => {
+import { SectionTitle } from "../ui/section-title";
+
+const UseCard = ({ title, subtitle, description, image, imageAlt }) => {
   return (
-    <section className="pt-24 lg:pt-38">
+    <section className="py-24">
       <div className="space-y-4 lg:space-y-10 mb-6 lg:mb-24">
-        <h3 className="flex flex-col text-2xl lg:text-5xl font-semibold uppercase">
-          {title_one}
-          <br />
-          {title_two}
-        </h3>
-        <p className="text-base lg:text-2xl w-full lg:max-w-187">
-          {description}
-        </p>
+        <SectionTitle title={title} subtitle={subtitle} text={description} />
       </div>
       <div className="w-full flex items-center justify-center">
         <img src={image} alt={imageAlt} className={`w-full max-w-5xl h-auto`} />

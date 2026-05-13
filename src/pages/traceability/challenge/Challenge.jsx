@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { SectionTitle } from "../../../components/ui/section-title";
 
 const Challenge = ({ title, description, challenges }) => {
   const [showMore, setShowMore] = React.useState(null); // Track the index of the expanded item
@@ -11,15 +12,15 @@ const Challenge = ({ title, description, challenges }) => {
   return (
     <section className="w-full mt-24">
       <div className="space-y-4 lg:space-y-8">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold">
-          {title}
-        </h2>
-        <p className="w-full lg:max-w-[748px] text-base lg:text-xl">
-          {description}
-        </p>
+        <SectionTitle
+          title="What We Were Solving"
+          subtitle={title}
+          text={description}
+          className="mb-12"
+        />
       </div>
 
-      <div className="w-full lg:max-w-[800px] mt-8 grid gap-6 items-center">
+      <div className="w-full lg:max-w-200 mt-8 grid gap-6 items-center">
         {challenges.map((item, index) => (
           <div
             key={index}

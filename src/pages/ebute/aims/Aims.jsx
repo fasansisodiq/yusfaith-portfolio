@@ -12,7 +12,7 @@ const aimsData = [
 
 const Aims = () => {
   return (
-    <section className="pt-24">
+    <section className="py-24">
       <div className="flex flex-col md:flex-row items-center gap-6 md:gap-15">
         <div>
           <SectionTitle

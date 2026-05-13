@@ -1,10 +1,10 @@
-const WireFrame = ({ title, images }) => {
+import { SectionTitle } from "../../../components/ui/section-title";
+
+const WireFrame = ({ title, subtitle, images }) => {
   console.log(title, images);
   return (
     <section>
-      <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold mb-24 mt-24">
-        {title}
-      </h2>
+      <SectionTitle title={title} subtitle={subtitle} className="mb-8" />
       <div className="w-full grid grid-cols-5 gap-4">
         {images.map((image, index) => (
           <div key={index}>

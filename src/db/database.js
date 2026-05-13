@@ -127,18 +127,19 @@ export const traceData = {
     ],
   },
   aims: {
-    title_one: "Project aims and objectives",
+    title: "Project aims and objectives",
+    subtitle: "Defining the Problem",
     description:
       "The aim of this project was to design a digital platform that streamlines operations at container terminals, addressing inefficiencies in yard management and improving productivity for all stakeholders.",
     image: traceHome,
   },
   userInterface: {
-    title_one: "Users Interface",
-    title_two: "for Administrators",
+    title: "Users Interface",
+    subtitle: "for Administrators",
     image: traceDash,
   },
   userFlow: {
-    title_one: "User flow",
+    title: "User flow",
     description:
       "Creating user flow for the application set out the paths users will follow in order to achieve their goals and visualize how the users is expected to move through the EBUTE App",
     image: flowchart,
@@ -148,15 +149,11 @@ export const traceData = {
     description:
       "Urbanist is a modern, geometric sans-serif typeface designed with clarity and versatility in mind.",
     fontFamily: "Urbanist, sans-serif",
-    colors: [
-      { hex: "#030080" },
-      { hex: "#EB5017" },
-      { hex: "#FFFFFF" },
-      { hex: "#EEEEEE" },
-    ],
+    colors: [{ hex: "#030080" }, { hex: "#EEEEEE" }],
   },
   wireframe: {
     title: "Wireframes",
+    subtitle: "Low-Fidelity Wireframes",
     images: [img1, img2, img3, img4, img5],
   },
 
@@ -202,14 +199,14 @@ export const terminalData = {
     ],
   },
   aims: {
-    title_one: "Project aims and objectives",
+    title: "Project aims and objectives",
     description:
       "To design and implement a centralized ERP system that enhances efficiency, accuracy, and collaboration across all departments within Starlink Global Ideal Limited.",
     image: terminalAims,
   },
   userInterface: {
-    title_one: "Users Interface",
-    title_two: "for Administrators",
+    title: "Users Interface",
+    subtitle: "for Administrators",
     image: terminalUser,
   },
   userFlow: {
@@ -271,14 +268,14 @@ export const quicklistData = {
     ],
   },
   aims: {
-    title_one: "Project aims and objectives",
+    title: "Project aims and objectives",
     description:
       "To design and implement a centralized ERP system that enhances efficiency, accuracy, and collaboration across all departments within Starlink Global Ideal Limited.",
     image: terminalAims,
   },
   userInterface: {
-    title_one: "Users Interface",
-    title_two: "for Administrators",
+    title: "Users Interface",
+    subtitle: "for Administrators",
     image: terminalUser,
   },
   userFlow: {

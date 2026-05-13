@@ -2,7 +2,7 @@ import { SectionTitle } from "../ui/section-title";
 
 const LearnCard = ({ title, subtitle, description, children }) => {
   return (
-    <section className="pt-24 lg:pt-38">
+    <div>
       <SectionTitle
         title={title}
         subtitle={subtitle}
@@ -11,7 +11,7 @@ const LearnCard = ({ title, subtitle, description, children }) => {
       />
 
       <div>{children}</div>
-    </section>
+    </div>
   );
 };
 

@@ -1,19 +1,17 @@
 import React from "react";
 import LearnCard from "../../../components/learn-card/LearnCard";
-import { ebuteData } from "../../../db/database";
+import { traceData } from "../../../db/database";
 
 const lists = [
-  "One of the most valuable lessons I gained from this experience was the importance of time management and staying focused under tight deadlines.",
+  "This project marked the very first task I undertook upon joining Ebute truck management App. Looking back at the design now, I’m filled with gratitude for how far I’ve come and proud of the work, despite its imperfections.",
 
-  "That experience taught me a lot about planning, prioritizing, and managing expectations - skills that have been pivotal in every project since.",
+  "One of the most valuable lessons I gained from this experience was the importance of time management.",
 
-  "Designing for enterprise operations required deep collaboration with developers and domain experts to ensure accuracy in every flow and interaction.",
-
-  "Built a scalable design system using Montserrat and a purple-blue palette that now serves as the foundation for all Ebute product interfaces",
+  "That experience taught me a lot about planning, prioritizing, and managing expectations, Skills that have been crucial in every project since.",
 ];
 
 const Learn = () => {
-  const { title, subtitle, description } = ebuteData.learnings;
+  const { title, subtitle, description } = traceData.learnings;
   return (
     <section className="py-24">
       <LearnCard title={title} subtitle={subtitle} description={description}>

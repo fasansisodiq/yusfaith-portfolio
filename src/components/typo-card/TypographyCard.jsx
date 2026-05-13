@@ -25,7 +25,7 @@ export default function TypographyCard({
   }, [fontFamily]);
 
   return (
-    <section className="bg-black text-white mt-24" style={{ fontFamily }}>
+    <section className="bg-black text-white py-24" style={{ fontFamily }}>
       <SectionTitle
         title={fontName}
         subtitle="  Typography, Iconography & Colors"

@@ -31,7 +31,7 @@ const challenges = [
 
 const Challenges = () => {
   return (
-    <section className="pt-24">
+    <section className="py-24">
       <SectionTitle
         title="What We Were Solving"
         subtitle="The Challenge"

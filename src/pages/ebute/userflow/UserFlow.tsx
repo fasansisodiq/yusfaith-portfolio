@@ -3,7 +3,7 @@ import userflow from "../../../assests/images/userflow.png";
 
 const UserFlow = () => {
   return (
-    <section className="pt-24">
+    <section className="py-24">
       <SectionTitle
         title="How Users Move Through EBUTE"
         subtitle="USER FLOW"

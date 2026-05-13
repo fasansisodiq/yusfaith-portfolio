@@ -5,7 +5,7 @@ import uiImg from "../../../assests/images/userinterface.png";
 
 const UserInterface = () => {
   return (
-    <section className="pt-24">
+    <section className="py-24">
       <SectionTitle
         title="For Administrators"
         subtitle="USERS INTERFACE"

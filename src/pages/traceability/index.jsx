@@ -8,6 +8,7 @@ import TypographyCard from "../../components/typo-card/TypographyCard";
 import { traceData } from "../../db/database";
 import LearnCard from "../../components/learn-card/LearnCard";
 import WireFrame from "./wireframe/WireFrame";
+import Learn from "./learn/Learn";
 
 const Tracceability = () => {
   console.log(traceData.images);
@@ -20,7 +21,7 @@ const Tracceability = () => {
       <UseCard {...traceData.userFlow} />
       <TypographyCard {...traceData.typography} />
       <WireFrame {...traceData.wireframe} />
-      <LearnCard {...traceData.learnings} />
+      <Learn />
     </div>
   );
 };
