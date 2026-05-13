@@ -55,7 +55,7 @@ const projectData = [
       "Communication and engagement between Hon. Iyepe and constituents",
     imgSrc: TraceImg,
     linkText: "Community",
-    href: "/quicklist",
+    href: "/honorable-iyepe",
   },
 ];
 

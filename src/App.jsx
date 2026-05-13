@@ -5,6 +5,7 @@ import Ebute from "./pages/ebute";
 import Tracceability from "./pages/traceability";
 import TerminalManagement from "./pages/terminalmgt";
 import Quicklist from "./pages/quicklist";
+import HonorableIyepe from "./pages/honorable-iyepe";
 
 //componenrs
 // import ScrollToTop from "./components/srolltotop/ScrollToTop";
@@ -25,6 +26,7 @@ const privateRoutes = createBrowserRouter(
       <Route path="/traceability" element={<Tracceability />} />
       <Route path="/terminal-management" element={<TerminalManagement />} />
       <Route path="/quicklist" element={<Quicklist />} />
+      <Route path="/honorable-iyepe" element={<HonorableIyepe />} />
     </Route>,
   ),
 );

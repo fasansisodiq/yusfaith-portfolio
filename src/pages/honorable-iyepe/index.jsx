@@ -4,12 +4,11 @@ import TypographyCard from "../../components/typo-card/TypographyCard";
 import { quicklistData } from "../../db/database";
 import Challenges from "./challenges/Challenges";
 import LearnCard from "../../components/learn-card/LearnCard";
-import Overview from "./overview/Overview";
 
-const Quicklist = () => {
+const HonorableIyepe = () => {
   return (
     <div>
-      <Overview />
+      <IntroCard {...quicklistData.overview} />
       <Challenges />
       <UseCard {...quicklistData.aims} />
       <UseCard {...quicklistData.userInterface} />
@@ -20,4 +19,4 @@ const Quicklist = () => {
   );
 };
 
-export default Quicklist;
+export default HonorableIyepe;
