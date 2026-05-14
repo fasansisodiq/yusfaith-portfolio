@@ -18,10 +18,10 @@ const Challenges = () => {
           return (
             <div
               key={idx}
-              className="bg-white rounded-md p-6 flex flex-col space-y-4"
+              className="bg-accent-foreground border border-white/10 hover:bg-muted-foreground/50 text-gray-400 rounded-md p-6 flex flex-col space-y-4"
             >
-              <span>{<item.icon />}</span>
-              <p className="text-black!">{item.quote}</p>
+              <span>{<item.icon size={24} />}</span>
+              <p className="text-white">{item.quote}</p>
             </div>
           );
         })}

@@ -24,8 +24,8 @@ const colorVariants = {
   },
   hgreen: {
     text: "text-[#256515]",
-    background: "before:bg-[#256515]"
-  }
+    background: "before:bg-[#256515]",
+  },
 };
 
 export const SectionTitle = ({

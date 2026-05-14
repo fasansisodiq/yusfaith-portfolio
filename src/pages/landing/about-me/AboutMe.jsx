@@ -30,7 +30,7 @@ function AboutMe() {
             {skills.map((skill) => (
               <span
                 key={skill}
-                className="flex-grow w-33 inline-flex items-center justify-center bg-card-foreground border border-white/10 px-4 py-2 rounded-full text-white/70 text-center text-xs font-normal capitalize whitespace-nowrap"
+                className="grow w-33 inline-flex items-center justify-center bg-card-foreground border border-white/10 px-4 py-2 rounded-full text-white/70 text-center text-xs font-normal capitalize whitespace-nowrap"
               >
                 {skill}
               </span>

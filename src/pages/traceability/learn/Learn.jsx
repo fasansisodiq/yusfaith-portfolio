@@ -14,7 +14,12 @@ const Learn = () => {
   const { title, subtitle, description } = traceData.learnings;
   return (
     <section className="py-24">
-      <LearnCard title={title} subtitle={subtitle} description={description}>
+      <LearnCard
+        title={title}
+        subtitle={subtitle}
+        description={description}
+        color="traceBlue"
+      >
         <ul className="flex flex-col">
           {lists.map((list, idx) => (
             <li

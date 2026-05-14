@@ -1,30 +1,7 @@
 import { IconArrowLeft, IconPointFilled } from "@tabler/icons-react";
 import { Button } from "../components/ui/button";
 import { cn } from "@/lib/utils";
-
-const colorVariants = {
-  purple: {
-    text: "text-purple-500",
-    textMuted: "text-purple-500/70",
-    bgSoft: "bg-purple-50/10",
-    border: "border-purple-500/70",
-    button: "bg-purple-500 hover:bg-purple-600",
-  },
-  orange: {
-    text: "text-orange-500",
-    textMuted: "text-orange-500/70",
-    bgSoft: "bg-orange-50/10",
-    border: "border-orange-500/70",
-    button: "bg-orange-500 hover:bg-orange-600",
-  },
-  green: {
-    text: "text-[#256515]",
-    textMuted: "text-[#256515]/70",
-    bgSoft: "bg-[#256515]/10",
-    border: "border-[#256515]/70",
-    button: "bg-[#256515] hover:bg-[#256720]",
-  },
-};
+import { colorVariants } from "../constants/colorVariants";
 
 export const HeroCard = ({
   badge,
@@ -65,7 +42,7 @@ export const HeroCard = ({
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-18">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-18">
       <div className="order-2 md:order-1 md:max-w-105 space-y-4 lg:space-y-8">
         <span
           className={cn(

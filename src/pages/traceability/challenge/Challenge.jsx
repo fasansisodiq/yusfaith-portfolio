@@ -1,16 +1,11 @@
 import React from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import { traceData } from "../../../db/database";
 import { SectionTitle } from "../../../components/ui/section-title";
 
-const Challenge = ({ title, description, challenges }) => {
-  const [showMore, setShowMore] = React.useState(null); // Track the index of the expanded item
-
-  const toggleShowMore = (index) => {
-    setShowMore((prevIndex) => (prevIndex === index ? null : index)); // Toggle the clicked item
-  };
-
+const Challenge = () => {
+  const { title, description, challenges } = traceData.challenge;
   return (
-    <section className="w-full mt-24">
+    <section className="w-full py-24">
       <div className="space-y-4 lg:space-y-8">
         <SectionTitle
           title="What We Were Solving"
@@ -21,43 +16,27 @@ const Challenge = ({ title, description, challenges }) => {
         />
       </div>
 
-      <div className="w-full lg:max-w-200 mt-8 grid gap-6 items-center">
-        {challenges.map((item, index) => (
-          <div
-            key={index}
-            className="border border-white rounded-xl p-6 flex flex-col bg-white cursor-pointer"
-          >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        {challenges.map((item, idx) => {
+          return (
             <div
-              onClick={() => toggleShowMore(index)}
-              className="flex items-center justify-between"
+              key={idx}
+              className="group bg-accent-foreground border border-white/10 hover:bg-muted-foreground/50 text-gray-400 rounded-md p-6 flex flex-col space-y-4 relative overflow-hidden"
             >
-              <h3 className="text-base lg:text-2xl text-black! font-semibold w-[calc(100%-3rem)]">
-                {item.title}
-              </h3>
-              {/* Toggle button */}
-              <div className="p-2 flex items-center justify-center rounded-full bg-black cursor-pointer w-8 h-8 lg:w-12 lg:h-12">
-                <IoIosArrowDown
-                  color="#fff"
-                  className={`size-6 lg:size-8 transition-transform duration-300 ${
-                    showMore === index ? "-rotate-180" : "rotate-0"
-                  }`}
-                />
-              </div>
+              <span
+                className="absolute inset-x-0 top-0 h-0.5 
+      bg-linear-to-r from-transparent via-transparent to-transparent
+       transition-all ease-in-out duration-300 
+       group-hover:from-transparent group-hover:via-[#007BFF] group-hover:to-transparent"
+              />
+              <span className="absolute top-0 right-0 text-6xl font-extrabold -rotate-12 text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.2)]">
+                {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
+              </span>
+              <h3 className="text-white font-semibold">{item.title}</h3>
+              <p className="text-sm">{item.description}</p>
             </div>
-
-            {/* Show More Content */}
-            <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                showMore === index
-                  ? "max-h-50 opacity-100"
-                  : "max-h-0 opacity-0"
-              }`}
-            >
-              <hr className="my-4" />
-              <span className={`text-sm lg:text-base`}>{item.description}</span>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

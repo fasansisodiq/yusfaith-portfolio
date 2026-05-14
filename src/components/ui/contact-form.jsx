@@ -1,18 +1,8 @@
-"use client";
-
 import * as React from "react";
 import { useForm } from "@tanstack/react-form";
 import { toast } from "sonner";
 import * as z from "zod";
-
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardFooter,
-//   CardHeader,
-//   CardTitle,
-// } from "@/components/ui/card";
+import emailjs from "@emailjs/browser";
 import {
   Field,
   FieldError,
@@ -25,7 +15,7 @@ import {
   InputGroupText,
   InputGroupTextarea,
 } from "@/components/ui/input-group";
-import { IconArrowRight } from "@tabler/icons-react";
+import { IconArrowRight, IconLoader } from "@tabler/icons-react";
 import { twMerge } from "tailwind-merge";
 import { Button } from "./button";
 
@@ -42,6 +32,8 @@ const formSchema = z.object({
 });
 
 export function ContactForm({ className }) {
+  const formRef = React.useRef();
+
   const form = useForm({
     defaultValues: {
       name: "",
@@ -52,26 +44,35 @@ export function ContactForm({ className }) {
       onSubmit: formSchema,
     },
     onSubmit: async ({ value }) => {
-      toast("You submitted the following values:", {
-        description: (
-          <pre className="mt-2 w-[320px] overflow-x-auto rounded-md bg-code p-4 text-code-foreground">
-            <code>{JSON.stringify(value, null, 2)}</code>
-          </pre>
-        ),
-        position: "bottom-right",
-        classNames: {
-          content: "flex flex-col gap-2",
-        },
-        style: {
-          "--border-radius": "calc(var(--radius)  + 4px)",
-        },
-      });
+      try {
+        await emailjs.sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY },
+        );
+
+        toast("Message sent successfully!", {
+          position: "bottom-right",
+          style: {
+            "--border-radius": "calc(var(--radius) + 4px)",
+          },
+        });
+
+        form.reset();
+      } catch (error) {
+        toast("Failed to send message.", {
+          description: error.text,
+          position: "bottom-right",
+        });
+      }
     },
   });
 
   return (
     <div className={twMerge("w-full space-y-8", className)}>
       <form
+        ref={formRef}
         id="contact-form"
         onSubmit={(e) => {
           e.preventDefault();
@@ -171,8 +172,17 @@ export function ContactForm({ className }) {
           type="submit"
           form="contact-form"
           className="h-12 px-6 bg-white text-black rounded-full"
+          disabled={form.state.isSubmitting}
         >
-          Send Messgae <IconArrowRight />
+          {form.state.isSubmitting ? (
+            <>
+              <IconLoader className="animate-spin" /> Sending...
+            </>
+          ) : (
+            <>
+              Send Messgae <IconArrowRight />
+            </>
+          )}
         </Button>
       </Field>
     </div>

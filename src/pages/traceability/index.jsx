@@ -9,16 +9,18 @@ import LearnCard from "../../components/learn-card/LearnCard";
 import WireFrame from "./wireframe/WireFrame";
 import Learn from "./learn/Learn";
 import Typography from "./typo/Typography";
+import Aims from "./aims/Aims";
+import UserInterface from "./user-interface/UserInterface";
+import UserFlow from "./flow/UserFlow";
 
 const Tracceability = () => {
-  console.log(traceData.images);
   return (
     <div>
       <Overview {...traceData.overview} />
-      <Challenge {...traceData.challenge} />
-      <UseCard {...traceData.aims} />
-      <UseCard {...traceData.userInterface} />
-      <UseCard {...traceData.userFlow} />
+      <Challenge />
+      <Aims />
+      <UserInterface />
+      <UserFlow />
       <Typography />
       <WireFrame {...traceData.wireframe} />
       <Learn />

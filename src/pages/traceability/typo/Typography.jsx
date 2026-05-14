@@ -10,6 +10,7 @@ const Typography = () => {
       <SectionTitle
         title={fontName}
         subtitle="Typography, Iconography & Colors"
+        color="traceBlue"
       />
       <TypographyCard
         fontFamily={fontFamily}
