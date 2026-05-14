@@ -1,14 +1,16 @@
+import { cn } from "../../lib/utils";
 import SubFooter from "./SubFooter";
 
 const Footer = ({ isHidden }) => {
   return (
-    <footer
-      className={`"w-full bg-amber-300" ${
-        isHidden ? "hidden" : "block text-white"
-      }`}
-    >
+    <footer className="w-full text-white">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
-        <div className="flex flex-col items-center justify-center w-full gap-2.5 ">
+        <div
+          className={cn(
+            "flex flex-col items-center justify-center w-full gap-2.5 ",
+            isHidden && "hidden",
+          )}
+        >
           <span className="text-sm text-muted-foreground tracking-wide">
             Got a project in mind?
           </span>

@@ -44,7 +44,7 @@ export const MobileLink = ({
     >
       <motion.div
         onClick={handleCardTap}
-        className="relative bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] rounded-2xl border border-white/10 overflow-hidden active:scale-[0.98] transition-transform duration-200 "
+        className="relative bg-linear-to-br from-[#1a1a1a] to-[#0a0a0a] rounded-2xl border border-white/10 overflow-hidden active:scale-[0.98] transition-transform duration-200 "
         whileTap={{ scale: 0.98 }}
       >
         {/* Main Content */}
@@ -114,7 +114,7 @@ export const MobileLink = ({
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="overflow-hidden"
         >
-          <div className="relative">
+          <a className="relative" href={href}>
             <img
               ref={imgRef}
               src={imgSrc}
@@ -122,13 +122,13 @@ export const MobileLink = ({
               className="w-full h-auto object-cover"
               onLoad={(e) => setImageHeight(e.target.naturalHeight)}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
 
             {/* Full size hint */}
             <div className="absolute bottom-3 right-3 bg-black/50 backdrop-blur-md rounded-full px-3 py-1 text-xs text-white">
               View project
             </div>
-          </div>
+          </a>
         </motion.div>
       </motion.div>
     </motion.div>

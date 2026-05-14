@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const menuItems = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
+  { name: "About", path: "#aboutMe" },
   { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },
 ];
