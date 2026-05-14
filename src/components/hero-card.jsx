@@ -18,11 +18,11 @@ const colorVariants = {
     button: "bg-orange-500 hover:bg-orange-600",
   },
   green: {
-    text: "text-green-500",
-    textMuted: "text-green-500/70",
-    bgSoft: "bg-green-50/10",
-    border: "border-green-500/70",
-    button: "bg-green-500 hover:bg-green-600",
+    text: "text-[#256515]",
+    textMuted: "text-[#256515]/70",
+    bgSoft: "bg-[#256515]/10",
+    border: "border-[#256515]/70",
+    button: "bg-[#256515] hover:bg-[#256720]",
   },
 };
 

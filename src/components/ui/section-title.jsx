@@ -6,6 +6,10 @@ const colorVariants = {
     text: "text-blue-800",
     background: "before:bg-blue-800",
   },
+  traceBlue: {
+    text: "text-[#007BFF]",
+    background: "before:bg-[#007BFF]",
+  },
   orange: {
     text: "text-orange-500",
     background: "before:bg-orange-500",
@@ -18,6 +22,10 @@ const colorVariants = {
     text: "text-gray-500",
     background: "before:bg-gray-500",
   },
+  hgreen: {
+    text: "text-[#256515]",
+    background: "before:bg-[#256515]"
+  }
 };
 
 export const SectionTitle = ({

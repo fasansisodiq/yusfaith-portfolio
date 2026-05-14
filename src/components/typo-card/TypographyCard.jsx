@@ -25,13 +25,12 @@ export default function TypographyCard({
   }, [fontFamily]);
 
   return (
-    <section className="bg-black text-white py-24" style={{ fontFamily }}>
-      <SectionTitle
+    <div className="bg-black text-white" style={{ fontFamily }}>
+      {/* <SectionTitle
         title={fontName}
         subtitle="Typography, Iconography & Colors"
         className="mb-12"
-        color="blue"
-      />
+      /> */}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
@@ -72,6 +71,6 @@ export default function TypographyCard({
           );
         })}
       </div>
-    </section>
+    </div>
   );
 }

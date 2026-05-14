@@ -2,13 +2,13 @@
 import Overview from "./overview/Overview";
 import Challenge from "./challenge/Challenge";
 import UseCard from "../../components/use-card/UseCard";
-import TypographyCard from "../../components/typo-card/TypographyCard";
 
 //database
 import { traceData } from "../../db/database";
 import LearnCard from "../../components/learn-card/LearnCard";
 import WireFrame from "./wireframe/WireFrame";
 import Learn from "./learn/Learn";
+import Typography from "./typo/Typography";
 
 const Tracceability = () => {
   console.log(traceData.images);
@@ -19,7 +19,7 @@ const Tracceability = () => {
       <UseCard {...traceData.aims} />
       <UseCard {...traceData.userInterface} />
       <UseCard {...traceData.userFlow} />
-      <TypographyCard {...traceData.typography} />
+      <Typography />
       <WireFrame {...traceData.wireframe} />
       <Learn />
     </div>

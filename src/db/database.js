@@ -139,7 +139,8 @@ export const traceData = {
     image: traceDash,
   },
   userFlow: {
-    title: "User flow",
+    title: "How Users Navigate The Platform",
+    subtitle: "User Flow",
     description:
       "Creating user flow for the application set out the paths users will follow in order to achieve their goals and visualize how the users is expected to move through the EBUTE App",
     image: flowchart,
@@ -149,7 +150,7 @@ export const traceData = {
     description:
       "Urbanist is a modern, geometric sans-serif typeface designed with clarity and versatility in mind.",
     fontFamily: "Urbanist, sans-serif",
-    colors: [{ hex: "#030080" }, { hex: "#EEEEEE" }],
+    colors: [{ hex: "#007BFF" }, { hex: "#EEEEEE" }],
   },
   wireframe: {
     title: "Wireframes",
@@ -286,12 +287,7 @@ export const quicklistData = {
     description:
       "Inter is a modern, geometric sans-serif typeface designed with clarity and versatility in mind.",
     fontFamily: "Inter, sans-serif",
-    colors: [
-      { hex: "#030080" },
-      { hex: "#FFFFFF" },
-      { hex: "#EB5017" },
-      { hex: "#EEEEEE" },
-    ],
+    colors: [{ hex: "#f97316" }, { hex: "#FFFFFF" }],
   },
   learnings: {
     title: "Achievements and Learnings",

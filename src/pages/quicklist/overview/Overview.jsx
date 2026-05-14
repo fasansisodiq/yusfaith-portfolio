@@ -22,7 +22,7 @@ const data = {
 
 const Overview = () => {
   return (
-    <section className="w-full mt-24 ">
+    <section className="w-full py-24">
       <HeroCard
         badge={data.badge}
         title={data.title}

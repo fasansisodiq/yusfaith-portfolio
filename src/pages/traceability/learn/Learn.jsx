@@ -24,7 +24,7 @@ const Learn = () => {
               <span className="absolute top-1/2 left-0 transform -translate-y-1/2 text-muted-foreground">
                 {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
               </span>
-              <span className="ml-4.5">{list}</span>
+              <span className="ml-4.5 text-muted-foreground">{list}</span>
             </li>
           ))}
         </ul>

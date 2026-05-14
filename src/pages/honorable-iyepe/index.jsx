@@ -1,20 +1,17 @@
-import IntroCard from "../../components/intro-card/IntroCard";
-import UseCard from "../../components/use-card/UseCard";
-import TypographyCard from "../../components/typo-card/TypographyCard";
-import { quicklistData } from "../../db/database";
-import Challenges from "./challenges/Challenges";
-import LearnCard from "../../components/learn-card/LearnCard";
+import Overview from "./overview/Overview";
+import Challenges from "./challenge/Challenges";
+import Aims from "./aims/Aims";
+import Typography from "./typo/Typography";
+import Learn from "./learn/Learn";
 
 const HonorableIyepe = () => {
   return (
     <div>
-      <IntroCard {...quicklistData.overview} />
+      <Overview />
       <Challenges />
-      <UseCard {...quicklistData.aims} />
-      <UseCard {...quicklistData.userInterface} />
-      <UseCard {...quicklistData.userFlow} />
-      <TypographyCard {...quicklistData.typography} />
-      <LearnCard {...quicklistData.learnings} />
+      <Aims />
+      <Typography />
+      <Learn />
     </div>
   );
 };

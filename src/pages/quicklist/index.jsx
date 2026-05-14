@@ -1,21 +1,20 @@
 import IntroCard from "../../components/intro-card/IntroCard";
-import UseCard from "../../components/use-card/UseCard";
-import TypographyCard from "../../components/typo-card/TypographyCard";
 import { quicklistData } from "../../db/database";
-import Challenges from "./challenges/Challenges";
+import Challenges from "./challenge/Challenges";
 import LearnCard from "../../components/learn-card/LearnCard";
 import Overview from "./overview/Overview";
+import Aims from "./aims/Aims";
+import Learn from "./learn/Learn";
+import Typography from "./typo/Typography";
 
 const Quicklist = () => {
   return (
     <div>
       <Overview />
       <Challenges />
-      <UseCard {...quicklistData.aims} />
-      <UseCard {...quicklistData.userInterface} />
-      <UseCard {...quicklistData.userFlow} />
-      <TypographyCard {...quicklistData.typography} />
-      <LearnCard {...quicklistData.learnings} />
+      <Aims />
+      <Typography />
+      <Learn />
     </div>
   );
 };

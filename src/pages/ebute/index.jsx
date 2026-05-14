@@ -1,7 +1,6 @@
 //components
 // import IntroSection from "./intro-section/IntroSection";
 import Challenges from "./challenge/Challenges";
-import TypographyCard from "../../components/typo-card/TypographyCard";
 
 //utilities
 import { ebuteData } from "../../db/database";
@@ -10,6 +9,7 @@ import Aims from "./aims/Aims";
 import UserInterface from "./user-interface/UserInterface";
 import UserFlow from "./userflow/UserFlow";
 import Learn from "./learn/Learn";
+import Typography from "./typo/Typography";
 
 const Ebute = () => {
   return (
@@ -19,7 +19,7 @@ const Ebute = () => {
       <Aims />
       <UserInterface />
       <UserFlow />
-      <TypographyCard {...ebuteData.typography} />
+      <Typography />
       <Learn />
     </div>
   );

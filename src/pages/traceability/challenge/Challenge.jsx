@@ -17,6 +17,7 @@ const Challenge = ({ title, description, challenges }) => {
           subtitle={title}
           text={description}
           className="mb-12"
+          color="traceBlue"
         />
       </div>
 
