@@ -116,7 +116,7 @@ export const Link = ({
           },
         }}
         transition={{ type: "spring" }}
-        className="absolute z-50 h-24 w-32 rounded-lg md:h-[28.125rem] md:w-[31.25rem] bg-[#141414] flex items-center justify-center"
+        className="absolute z-50 h-24 w-32 rounded-lg md:h-112.5 md:w-125 bg-[#141414] flex items-center justify-center"
       >
         <img
           src={imgSrc}
