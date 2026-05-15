@@ -33,7 +33,12 @@ export const ExperienceCounter = ({
           <span className={twMerge("text-count font-bold", titleClassName)}>
             {item.count}
           </span>
-          <span className={twMerge("text-xs text-gray-400", subtitleClassName)}>
+          <span
+            className={twMerge(
+              "text-sm text-muted-foreground font-medium",
+              subtitleClassName,
+            )}
+          >
             {item.label}
           </span>
         </div>

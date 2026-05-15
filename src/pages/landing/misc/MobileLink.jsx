@@ -103,7 +103,9 @@ export const MobileLink = ({
               <span>{linkText}</span>
               <IconArrowUpRight className="size-4" />
             </div>
-            <span className="text-xs text-gray-600">Tap for preview</span>
+            <span className="text-xs text-muted-foreground">
+              Tap for preview
+            </span>
           </motion.div>
         </div>
 

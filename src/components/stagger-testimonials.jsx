@@ -207,7 +207,7 @@ const TestimonialCard = ({ position, testimonial, handleMove, cardSize }) => {
       <h3
         className={cn(
           "mt-16 text-base sm:text-xl font-medium",
-          isCenter ? "!text-black" : "text-white/70",
+          isCenter ? "text-black" : "text-white/80",
         )}
       >
         "{testimonial.testimonial}"
@@ -223,7 +223,7 @@ const TestimonialCard = ({ position, testimonial, handleMove, cardSize }) => {
         />
         <div className={cn(isCenter ? "text-black" : "text-muted-foreground")}>
           <p className="font-semibold">{testimonial.by}</p>
-          <span className="">{testimonial.role}</span>
+          <span className="font-medium">{testimonial.role}</span>
         </div>
       </div>
     </div>

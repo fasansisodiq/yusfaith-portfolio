@@ -38,8 +38,8 @@ const socialLinks = [
 
 const SubFooter = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between w-full text-white py-24 gap-6">
-      <div className="order-2 md:order-0 text-sm md:text-base uppercase">
+    <div className="flex flex-col md:flex-row items-center justify-between w-full text-muted-foreground py-24 gap-6">
+      <div className="order-2 md:order-0 text-sm md:text-base uppercase font-medium">
         Abdulraheem Yuusuf 2024 ⓒ
       </div>
       <div className="order-1 md:order-0 flex items-center justify-center">

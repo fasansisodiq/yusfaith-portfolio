@@ -50,7 +50,7 @@ export const Link = ({
       className="group relative flex items-center justify-between border-b border-white/10 py-4 transition-colors duration-500 md:py-8"
     >
       <div className="flex items-start lg:items-center gap-6">
-        <span className="text-gray-500">{sn}</span>
+        <span className="text-muted-foreground">{sn}</span>
         {IconComponent && (
           <div className="h-9 w-9 flex items-center justify-center border border-white/10 bg-card-foreground rounded-lg shrink-0">
             <IconComponent className="size-4" stroke={1.5} />

@@ -19,8 +19,8 @@ const colorVariants = {
     background: "before:bg-green-500",
   },
   gray: {
-    text: "text-gray-500",
-    background: "before:bg-gray-500",
+    text: "text-muted-foreground",
+    background: "before:bg-muted-foreground",
   },
   hgreen: {
     text: "text-[#256515]",
