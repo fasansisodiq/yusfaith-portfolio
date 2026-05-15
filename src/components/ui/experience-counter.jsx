@@ -29,7 +29,7 @@ export const ExperienceCounter = ({
   return (
     <div className={twMerge("flex items-center gap-6", wrapperClassName)}>
       {data.map((item) => (
-        <div key={item.id} className={twMerge("flex flex-col", className)}>
+        <div key={item.id} className={twMerge("grid", className)}>
           <span className={twMerge("text-count font-bold", titleClassName)}>
             {item.count}
           </span>
