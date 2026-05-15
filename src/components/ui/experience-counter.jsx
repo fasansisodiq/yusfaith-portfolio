@@ -1,6 +1,5 @@
-import { div } from "framer-motion/client";
 import React from "react";
-import { twMerge } from "tailwind-merge";
+import { cn } from "../../lib/utils";
 
 const data = [
   {
@@ -27,14 +26,14 @@ export const ExperienceCounter = ({
   subtitleClassName,
 }) => {
   return (
-    <div className={twMerge("flex items-center gap-6", wrapperClassName)}>
+    <div className={cn("flex items-center gap-6", wrapperClassName)}>
       {data.map((item) => (
-        <div key={item.id} className={twMerge("grid", className)}>
-          <span className={twMerge("text-count font-bold", titleClassName)}>
+        <div key={item.id} className={cn("grid", className)}>
+          <span className={cn("text-count font-bold", titleClassName)}>
             {item.count}
           </span>
           <span
-            className={twMerge(
+            className={cn(
               "text-sm text-muted-foreground font-medium",
               subtitleClassName,
             )}
