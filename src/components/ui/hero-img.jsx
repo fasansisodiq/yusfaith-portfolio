@@ -3,10 +3,10 @@ import heroImg from "../../assests/images/yusuf.jpg";
 
 export const HeroImg = () => {
   return (
-    <div className="image relative group aspect-[5/6] max-w-[500px] w-full order-1 md:order-2">
+    <div className="image relative group aspect-5/6 max-w-125 w-full order-1 md:order-2">
       <div className="relative w-full h-full rounded-4xl border border-white/40 shadow-md overflow-hidden">
         <img
-          loading="lazy"
+          loading="eager"
           decoding="async"
           className="relative w-full h-full object-cover object-bottom z-10 hover:scale-105 transition-transform ease-in-out duration-300"
           src={heroImg}
