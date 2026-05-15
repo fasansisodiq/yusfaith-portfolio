@@ -7,7 +7,6 @@ export const HeroImg = () => {
       <div className="relative w-full h-full rounded-4xl border border-white/40 shadow-md overflow-hidden">
         <img
           loading="eager"
-          decoding="async"
           className="relative w-full h-full object-cover object-bottom z-10 hover:scale-105 transition-transform ease-in-out duration-300"
           src={heroImg}
           alt="Adulraheem Yusuf - UI/UX Designer"
