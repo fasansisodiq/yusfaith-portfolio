@@ -1,7 +1,10 @@
 import React from "react";
 import heroImg from "../../assests/images/yusuf.jpg";
+import { usePreloadImage } from "../../hooks/usePreloadImage";
 
 export const HeroImg = () => {
+  const isImageReady = usePreloadImage(heroImg);
+
   return (
     <div className="image relative group aspect-5/6 max-w-125 w-full order-1 md:order-2">
       <div className="relative w-full h-full rounded-4xl border border-white/40 shadow-md overflow-hidden">
