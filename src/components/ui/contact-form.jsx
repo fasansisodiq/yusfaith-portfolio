@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useForm } from "@tanstack/react-form";
+import { motion } from "framer-motion";
 import { toast } from "sonner";
 import * as z from "zod";
 import emailjs from "@emailjs/browser";
@@ -168,10 +169,11 @@ export function ContactForm({ className }) {
         {/* <Button type="button" variant="outline" onClick={() => form.reset()}>
             Reset
           </Button> */}
-        <Button
+        <motion.Button
+          whileTap={{ scale: 0.95 }}
           type="submit"
           form="contact-form"
-          className="h-12 px-6 bg-white text-black rounded-full"
+          className="h-12 px-6 bg-white text-black rounded-full flex items-center gap-2 font-medium"
           disabled={form.state.isSubmitting}
         >
           {form.state.isSubmitting ? (
@@ -180,10 +182,10 @@ export function ContactForm({ className }) {
             </>
           ) : (
             <>
-              Send Messgae <IconArrowRight />
+              Send Message <IconArrowRight />
             </>
           )}
-        </Button>
+        </motion.Button>
       </Field>
     </div>
   );

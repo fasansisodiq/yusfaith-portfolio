@@ -50,8 +50,10 @@ const SubFooter = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl mx-2 text-gray-800 hover:text-gray-600 transition duration-300"
+            aria-label={data.name}
           >
             <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-900 transition duration-300">
+              <span className="sr-only">{data.name}</span>
               <data.icon color="#fff" className="size-4 " />
             </div>
           </Link>
