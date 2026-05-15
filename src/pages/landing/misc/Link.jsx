@@ -125,7 +125,7 @@ export const Link = ({
         />
       </motion.div>
 
-      <div className="relative flex items-center text-xs font-medium tracking-wider text-gray-500 z-10 p-4">
+      <div className="relative flex items-center text-xs font-medium tracking-wider text-muted-foreground z-10 p-4">
         {linkText}
         <IconArrowUpRight className="size-4" />
       </div>
