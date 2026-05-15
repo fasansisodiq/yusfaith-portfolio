@@ -48,7 +48,9 @@ export const SectionTitle = ({
         {subtitle}
       </span>
       <h2 className="text-4xl text-white font-bold capitalize">{title}</h2>
-      {text && <p className="text-sm text-muted-foreground">{text}</p>}
+      {text && (
+        <p className="text-sm text-muted-foreground font-medium">{text}</p>
+      )}
     </div>
   );
 };
