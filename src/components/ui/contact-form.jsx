@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useForm } from "@tanstack/react-form";
+import { useForm, useStore } from "@tanstack/react-form";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
 import * as z from "zod";
@@ -11,25 +11,24 @@ import {
   FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import {
-  InputGroup,
-  InputGroupText,
-  InputGroupTextarea,
-} from "@/components/ui/input-group";
+import { InputGroup, InputGroupTextarea } from "@/components/ui/input-group";
 import { IconArrowRight, IconLoader } from "@tabler/icons-react";
 import { twMerge } from "tailwind-merge";
-import { Button } from "./button";
+// import { Button } from "./button";
 
 const formSchema = z.object({
   name: z
     .string()
     .min(5, "Name must be at least 5 characters.")
     .max(32, "Name must be at most 32 characters."),
-  email: z.string().email("Please enter a valid email address."),
+  email: z
+    .string()
+    .min(1, "Email is required.")
+    .email("Please enter a valid email address."),
   message: z
     .string()
     .min(20, "Message must be at least 20 characters.")
-    .max(100, "Message must be at most 100 characters."),
+    .max(500, "Message must be at most 500 characters."),
 });
 
 export function ContactForm({ className }) {
@@ -44,14 +43,23 @@ export function ContactForm({ className }) {
     validators: {
       onSubmit: formSchema,
     },
-    onSubmit: async ({ value }) => {
+    onSubmit: async () => {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        toast("Configuration error", {
+          description: "EmailJS not configured. Please check .env file.",
+          position: "bottom-right",
+        });
+        return;
+      }
+
       try {
-        await emailjs.sendForm(
-          import.meta.env.VITE_EMAILJS_SERVICE_ID,
-          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-          formRef.current,
-          { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY },
-        );
+        await emailjs.sendForm(serviceId, templateId, formRef.current, {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        });
 
         toast("Message sent successfully!", {
           position: "bottom-right",
@@ -69,6 +77,8 @@ export function ContactForm({ className }) {
       }
     },
   });
+
+  const isSubmitting = useStore(form.store, (state) => state.isSubmitting);
 
   return (
     <div className={twMerge("w-full space-y-8", className)}>
@@ -166,17 +176,14 @@ export function ContactForm({ className }) {
       </form>
 
       <Field orientation="horizontal">
-        {/* <Button type="button" variant="outline" onClick={() => form.reset()}>
-            Reset
-          </Button> */}
-        <motion.Button
+        <motion.button
           whileTap={{ scale: 0.95 }}
           type="submit"
           form="contact-form"
           className="h-12 px-6 bg-white text-black rounded-full flex items-center gap-2 font-medium"
-          disabled={form.state.isSubmitting}
+          disabled={isSubmitting}
         >
-          {form.state.isSubmitting ? (
+          {isSubmitting ? (
             <>
               <IconLoader className="animate-spin" /> Sending...
             </>
@@ -185,7 +192,7 @@ export function ContactForm({ className }) {
               Send Message <IconArrowRight />
             </>
           )}
-        </motion.Button>
+        </motion.button>
       </Field>
     </div>
   );

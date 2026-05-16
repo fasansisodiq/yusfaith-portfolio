@@ -39,7 +39,7 @@ function AboutMe() {
         </div>
         <ExperienceCounter
           wrapperClassName="w-full flex-col lg:flex-row gap-3"
-          className="bg-card-foreground border border-white/10 p-6 rounded-2xl w-full lg:max-w-[9.659rem] whitespace-nowrap"
+          className="bg-card-foreground border border-white/10 p-6 rounded-2xl w-full lg:max-w-[9.659rem]"
         />
       </div>
     </section>
